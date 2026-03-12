@@ -1,0 +1,1916 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.9)  11 MAR 2026 04:19
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/mac/Downloads/report_final/main
+(/Users/mac/Downloads/report_final/main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count271
+\c@chapter=\count272
+\c@section=\count273
+\c@subsection=\count274
+\c@subsubsection=\count275
+\c@paragraph=\count276
+\c@subparagraph=\count277
+\c@figure=\count278
+\c@table=\count279
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-01-19 L3 programming layer (loader) 
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
+\g__graphics_track_int=\count280
+\g__pdfannot_backend_int=\count281
+\g__pdfannot_backend_link_int=\count282
+))
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count283
+\l__fontspec_language_int=\count284
+\l__fontspec_strnum_int=\count285
+\l__fontspec_tmp_int=\count286
+\l__fontspec_tmpa_int=\count287
+\l__fontspec_tmpb_int=\count288
+\l__fontspec_tmpc_int=\count289
+\l__fontspec_em_int=\count290
+\l__fontspec_emdef_int=\count291
+\l__fontspec_strong_int=\count292
+\l__fontspec_strongdef_int=\count293
+\l__fontspec_tmpa_dim=\dimen149
+\l__fontspec_tmpb_dim=\dimen150
+\l__fontspec_tmpc_dim=\dimen151
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+
+Package fontspec Info: 
+(fontspec)             Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2026/02/14 v26.3 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count294
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2082.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2083.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2084.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2086.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
+\U@D=\dimen152
+\l@unhyphenated=\language23
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/babel/xebabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count295
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 4330.
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language7). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language7). Reported on input line 108.
+)) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count296
+\Gm@cntv=\count297
+\c@Gm@tempcnt=\count298
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks18
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count299
+)) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count300
+\float@exts=\toks19
+\float@box=\box53
+\@float@everytoks=\toks20
+\@floatcapt=\box54
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen163
+\captionmargin=\dimen164
+\caption@leftmargin=\dimen165
+\caption@rightmargin=\dimen166
+\caption@width=\dimen167
+\caption@indent=\dimen168
+\caption@parindent=\dimen169
+\caption@hangindent=\dimen170
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count301
+\c@continuedfloat=\count302
+Package caption Info: float package is loaded.
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen171
+\ar@mcellbox=\box55
+\extrarowheight=\dimen172
+\NC@list=\toks21
+\extratabsurround=\skip51
+\backup@length=\skip52
+\ar@cellbox=\box56
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen173
+\lightrulewidth=\dimen174
+\cmidrulewidth=\dimen175
+\belowrulesep=\dimen176
+\belowbottomsep=\dimen177
+\aboverulesep=\dimen178
+\abovetopsep=\dimen179
+\cmidrulesep=\dimen180
+\cmidrulekern=\dimen181
+\defaultaddspace=\dimen182
+\@cmidla=\count303
+\@cmidlb=\count304
+\@aboverulesep=\dimen183
+\@belowrulesep=\dimen184
+\@thisruleclass=\count305
+\@lastruleclass=\count306
+\@thisrulewidth=\dimen185
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip53
+\LTright=\skip54
+\LTpre=\skip55
+\LTpost=\skip56
+\LTchunksize=\count307
+\LTcapwidth=\dimen186
+\LT@head=\box57
+\LT@firsthead=\box58
+\LT@foot=\box59
+\LT@lastfoot=\box60
+\LT@gbox=\box61
+\LT@cols=\count308
+\LT@rows=\count309
+\c@LT@tables=\count310
+\c@LT@chunks=\count311
+\LT@p@ftn=\toks22
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen187
+\TX@old@table=\dimen188
+\TX@old@col=\dimen189
+\TX@target=\dimen190
+\TX@delta=\dimen191
+\TX@cols=\count312
+\TX@ftn=\toks23
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip57
+\multirow@cntb=\count313
+\multirow@dima=\skip58
+\bigstrutjot=\dimen192
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen193
+\c@nlinenum=\count314
+\TeXr@lab=\toks24
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: xetex.def on input line 149.
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+\everycr=\toks25
+\minrowclearance=\skip59
+\rownum=\count315
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks26
+\pgfutil@tempdima=\dimen194
+\pgfutil@tempdimb=\dimen195
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box62
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks29
+))
+\pgf@x=\dimen196
+\pgf@y=\dimen197
+\pgf@xa=\dimen198
+\pgf@ya=\dimen199
+\pgf@xb=\dimen256
+\pgf@yb=\dimen257
+\pgf@xc=\dimen258
+\pgf@yc=\dimen259
+\pgf@xd=\dimen260
+\pgf@yd=\dimen261
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count316
+\c@pgf@countb=\count317
+\c@pgf@countc=\count318
+\c@pgf@countd=\count319
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
+\pgf@sys@id@count=\count320
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-xetex.def
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)
+\pgfsys@objnum=\count321
+))) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count322
+\pgfsyssoftpath@bigbuffer@items=\count323
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+LaTeX Info: Redefining \color on input line 762.
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen262
+\pgfmath@count=\count324
+\pgfmath@box=\box63
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count325
+)) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen263
+\pgf@picmaxx=\dimen264
+\pgf@picminy=\dimen265
+\pgf@picmaxy=\dimen266
+\pgf@pathminx=\dimen267
+\pgf@pathmaxx=\dimen268
+\pgf@pathminy=\dimen269
+\pgf@pathmaxy=\dimen270
+\pgf@xx=\dimen271
+\pgf@xy=\dimen272
+\pgf@yx=\dimen273
+\pgf@yy=\dimen274
+\pgf@zx=\dimen275
+\pgf@zy=\dimen276
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen277
+\pgf@path@lasty=\dimen278
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen279
+\pgf@shorten@start@additional=\dimen280
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box64
+\pgf@hbox=\box65
+\pgf@layerbox@main=\box66
+\pgf@picture@serial@count=\count326
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen281
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen282
+\pgf@pt@y=\dimen283
+\pgf@pt@temp=\dimen284
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen285
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen286
+\pgf@sys@shading@range@num=\count327
+\pgf@shadingcount=\count328
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box67
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box68
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen287
+\pgf@nodesepend=\dimen288
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+)) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen289
+\pgffor@skip=\dimen290
+\pgffor@stack=\toks36
+\pgffor@toks=\toks37
+)) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count329
+\pgfplotmarksize=\dimen291
+)
+\tikz@lastx=\dimen292
+\tikz@lasty=\dimen293
+\tikz@lastxsaved=\dimen294
+\tikz@lastysaved=\dimen295
+\tikz@lastmovetox=\dimen296
+\tikz@lastmovetoy=\dimen297
+\tikzleveldistance=\dimen298
+\tikzsiblingdistance=\dimen299
+\tikz@figbox=\box69
+\tikz@figbox@bg=\box70
+\tikz@tempbox=\box71
+\tikz@tempbox@bg=\box72
+\tikztreelevel=\count330
+\tikznumberofchildren=\count331
+\tikznumberofcurrentchild=\count332
+\tikz@fig@count=\count333
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count334
+\pgfmatrixcurrentcolumn=\count335
+\pgf@matrix@numberofcolumns=\count336
+)
+\tikz@expandcount=\count337
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2025/08/14 v1.18.2 Data Visualization (1.18.2)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks38
+\t@pgfplots@tokb=\toks39
+\t@pgfplots@tokc=\toks40
+\pgfplots@tmpa=\dimen300
+\c@pgfplots@coordindex=\count338
+\c@pgfplots@scanlineindex=\count339
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count340
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count341
+\t@pgfplotstable@a=\toks41
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count342
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-xetex.def (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-dvipdfmx.def
+\c@pgfplotslibrarysurf@streamlen=\count343
+)))) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen301
+\pgfdecoratedremainingdistance=\dimen302
+\pgfdecoratedinputsegmentcompleteddistance=\dimen303
+\pgfdecoratedinputsegmentremainingdistance=\dimen304
+\pgf@decorate@distancetomove=\dimen305
+\pgf@decorate@repeatstate=\count344
+\pgfdecorationsegmentamplitude=\dimen306
+\pgfdecorationsegmentlength=\dimen307
+)
+\tikz@lib@dec@box=\box73
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count345
+\pgfplots@xmin@reg=\dimen308
+\pgfplots@xmax@reg=\dimen309
+\pgfplots@ymin@reg=\dimen310
+\pgfplots@ymax@reg=\dimen311
+\pgfplots@zmin@reg=\dimen312
+\pgfplots@zmax@reg=\dimen313
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip60
+\enit@outerparindent=\dimen314
+\enit@toks=\toks42
+\enit@inbox=\box74
+\enit@count@id=\count346
+\enitdp@description=\count347
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count348
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\@linkdim=\dimen315
+\Hy@linkcounter=\count349
+\Hy@pagecounter=\count350
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count351
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4072.
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4468.
+\c@Hy@tempcnt=\count352
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen316
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count353
+\Field@Width=\dimen317
+\Fld@charsize=\dimen318
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring ON on input line 6102.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count354
+\c@Item=\count355
+\c@Hfootnote=\count356
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2026-01-29 v7.01p Hyperref driver for XeTeX
+\pdfm@box=\box75
+\c@Hy@AnnotLevel=\count357
+\HyField@AnnotCount=\count358
+\Fld@listcount=\count359
+\c@bookmark@seq@number=\count360
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+)
+\Hy@SectionHShift=\skip61
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip62
+\f@nch@offset@elh=\skip63
+\f@nch@offset@erh=\skip64
+\f@nch@offset@olh=\skip65
+\f@nch@offset@orh=\skip66
+\f@nch@offset@elf=\skip67
+\f@nch@offset@erf=\skip68
+\f@nch@offset@olf=\skip69
+\f@nch@offset@orf=\skip70
+\f@nch@height=\skip71
+\f@nch@footalignment=\skip72
+\f@nch@widthL=\skip73
+\f@nch@widthC=\skip74
+\f@nch@widthR=\skip75
+\@temptokenb=\toks43
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box76
+\beforetitleunit=\skip76
+\aftertitleunit=\skip77
+\ttl@plus=\dimen319
+\ttl@minus=\dimen320
+\ttl@toksa=\toks44
+\titlewidth=\dimen321
+\titlewidthlast=\dimen322
+\titlewidthfirst=\dimen323
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2025/03/13 v1.3e reserve vertical space
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+\MT@toks=\toks45
+\MT@tempbox=\box77
+\MT@count=\count361
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks46
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen324
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count362
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2026/03/01 v3.2d Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 443.
+LaTeX Info: Redefining \lslig on input line 451.
+\MT@outer@space=\skip78
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks47
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 121.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 121.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 121.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 121.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 121.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 121.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 121.
+LaTeX Font Info:    Redeclaring math accent \check on input line 121.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 121.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 121.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 121.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 121.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 121.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 121.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 121.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 121.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on input line 121.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 121.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 121.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 121.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 121.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on input line 121.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input line 121.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 121.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 121.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* bindingoffset: 14.22636pt
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24413pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24413pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08826pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-54.36449pt
+* \headheight=14.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+Package hyperref Info: Link coloring ON on input line 121.
+(./main.out) (./main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+LaTeX Info: Redefining \microtypecontext on input line 121.
+Package microtype Info: Applying patch `item' on input line 121.
+Package microtype Info: Applying patch `toc' on input line 121.
+Package microtype Info: Applying patch `eqnum' on input line 121.
+Package microtype Info: Applying patch `footnote' on input line 121.
+Package microtype Info: Applying patch `verbatim' on input line 121.
+LaTeX Info: Redefining \microtypesetup on input line 121.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `TimesNewRoman' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 140.
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 140.
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+) [1
+
+] [1] [2] [3] [4] [5] [6] (./main.toc [1
+
+])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [2] (./main.lof [3
+
+])
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+ [4] (./main.lot)
+\tf@lot=\write7
+\openout7 = `main.lot'.
+
+ [5
+
+] [6
+
+] [7]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [1
+
+] [2]
+Chapter I.
+[3
+
+]
+File: ibsoft/images.png Graphic file (type bmp)
+<ibsoft/images.png>
+ [4]
+File: casestudy/DVR.png Graphic file (type bmp)
+<casestudy/DVR.png>
+File: casestudy/milestone.png Graphic file (type bmp)
+<casestudy/milestone.png>
+ [5]
+File: casestudy/frigate.png Graphic file (type bmp)
+<casestudy/frigate.png>
+ [6] [7]
+File: casestudy/scrum.png Graphic file (type bmp)
+<casestudy/scrum.png>
+
+Underfull \hbox (badness 3861) in paragraph at lines 477--477
+[]|\TU/TimesNewRoman(0)/b/n/12 Extreme Program-
+ []
+
+
+Underfull \hbox (badness 3861) in paragraph at lines 482--482
+[]|\TU/TimesNewRoman(0)/b/n/12 Extreme Program-
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 487--487
+[]|\TU/TimesNewRoman(0)/m/n/12 Fixed-length sprints
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
+[]|\TU/TimesNewRoman(0)/m/n/12 Short release cy-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
+\TU/TimesNewRoman(0)/m/n/12 cles, continuous
+ []
+
+
+Underfull \hbox (badness 4981) in paragraph at lines 489--489
+\TU/TimesNewRoman(0)/m/n/12 uct Owner, Scrum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--491
+[]|\TU/TimesNewRoman(0)/m/n/12 Sprint planning,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--491
+\TU/TimesNewRoman(0)/m/n/12 backlog grooming,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--491
+[]|\TU/TimesNewRoman(0)/m/n/12 Release planning
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--491
+\TU/TimesNewRoman(0)/m/n/12 and iteration plan-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--492
+[]|\TU/TimesNewRoman(0)/m/n/12 Just-in-time plan-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--493
+[]|\TU/TimesNewRoman(0)/m/n/12 Working increment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--493
+[]|\TU/TimesNewRoman(0)/m/n/12 Frequent small
+ []
+
+
+Underfull \hbox (badness 3271) in paragraph at lines 495--495
+[]|\TU/TimesNewRoman(0)/m/n/12 Sprint reviews and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--495
+[]|\TU/TimesNewRoman(0)/m/n/12 Pair programming,
+ []
+
+
+Underfull \hbox (badness 4378) in paragraph at lines 495--495
+\TU/TimesNewRoman(0)/m/n/12 test-driven develop-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
+[]|\TU/TimesNewRoman(0)/m/n/12 Implicit through
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--497
+[]|\TU/TimesNewRoman(0)/m/n/12 Adapts at sprint
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 497--497
+\TU/TimesNewRoman(0)/m/n/12 tinuous testing and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
+[]|\TU/TimesNewRoman(0)/m/n/12 Highly adaptive,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
+[]|\TU/TimesNewRoman(0)/m/n/12 Complex projects
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
+\TU/TimesNewRoman(0)/m/n/12 with evolving re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
+\TU/TimesNewRoman(0)/m/n/12 quirements and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
+\TU/TimesNewRoman(0)/m/n/12 multiple stakehold-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
+\TU/TimesNewRoman(0)/m/n/12 ing projects with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
+\TU/TimesNewRoman(0)/m/n/12 strong engineering
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
+[]|\TU/TimesNewRoman(0)/m/n/12 Ongoing mainte-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
+\TU/TimesNewRoman(0)/m/n/12 nance or support
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 501--501
+\TU/TimesNewRoman(0)/m/n/12 sprint board, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
+[]|\TU/TimesNewRoman(0)/b/n/12 Excellent \TU/TimesNewRoman(0)/m/n/12 – mi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
+\TU/TimesNewRoman(0)/m/n/12 croservices with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
+\TU/TimesNewRoman(0)/m/n/12 vertical slices per
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 503--504
+[]|\TU/TimesNewRoman(0)/m/n/12 Not ideal – project
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [8]
+File: Tech/jira.png Graphic file (type bmp)
+<Tech/jira.png>
+ [9]
+File: Tech/github.png Graphic file (type bmp)
+<Tech/github.png>
+ [10] [11]
+ignored: Infinite glue shrinkage found in box being split [12]
+File: Machines/mac.png Graphic file (type bmp)
+<Machines/mac.png>
+ [13]
+File: Machines/lenovo.png Graphic file (type bmp)
+<Machines/lenovo.png>
+File: Tech/fastapi.png Graphic file (type bmp)
+<Tech/fastapi.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--688
+[]|\TU/TimesNewRoman(0)/m/n/12 FastAPI: high-performance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--688
+\TU/TimesNewRoman(0)/m/n/12 Python web framework for
+ []
+
+
+Underfull \hbox (badness 3579) in paragraph at lines 687--688
+\TU/TimesNewRoman(0)/m/n/12 building APIs with automatic
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 688--688
+\TU/TimesNewRoman(0)/m/n/12 generated interactive docs that
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 688--688
+\TU/TimesNewRoman(0)/m/n/12 actually saved us time during
+ []
+
+File: Tech/go.png Graphic file (type bmp)
+<Tech/go.png>
+
+Underfull \hbox (badness 1184) in paragraph at lines 691--692
+[]|\TU/TimesNewRoman(0)/m/n/12 Go (Golang): statically typed,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 691--692
+\TU/TimesNewRoman(0)/m/n/12 compiled language built for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 691--692
+\TU/TimesNewRoman(0)/m/n/12 simplicity, reliability, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+[]|\TU/TimesNewRoman(0)/m/n/12 Native goroutine concurrency
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 692--692
+\TU/TimesNewRoman(0)/m/n/12 and compiled-level throughput
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 692--692
+\TU/TimesNewRoman(0)/m/n/12 sands of simultaneous stream
+ []
+
+File: Tech/react.png Graphic file (type bmp)
+<Tech/react.png>
+
+Underfull \hbox (badness 3735) in paragraph at lines 695--696
+[]|\TU/TimesNewRoman(0)/m/n/12 React: JavaScript library for
+ []
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 695--696
+\TU/TimesNewRoman(0)/m/n/12 building interactive user inter-
+ []
+
+
+Underfull \hbox (badness 4739) in paragraph at lines 695--696
+\TU/TimesNewRoman(0)/m/n/12 faces, particularly single-page
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 696--696
+\TU/TimesNewRoman(0)/m/n/12 UI responsive, and TypeScript
+ []
+
+File: Tech/react.png Graphic file (type bmp)
+<Tech/react.png>
+
+Underfull \hbox (badness 5260) in paragraph at lines 699--700
+[]|\TU/TimesNewRoman(0)/m/n/12 React Native: cross-platform
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--700
+\TU/TimesNewRoman(0)/m/n/12 mobile framework producing
+ []
+
+File: Tech/typescript.png Graphic file (type bmp)
+<Tech/typescript.png>
+
+Underfull \hbox (badness 1466) in paragraph at lines 703--704
+[]|\TU/TimesNewRoman(0)/m/n/12 TypeScript: typed superset of
+ []
+
+File: Tech/postgresql.png Graphic file (type bmp)
+<Tech/postgresql.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--708
+[]|\TU/TimesNewRoman(0)/m/n/12 PostgreSQL: advanced open-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--708
+\TU/TimesNewRoman(0)/m/n/12 source relational database,
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 708--708
+[]|\TU/TimesNewRoman(0)/m/n/12 JSON column support, strong
+ []
+
+File: Tech/sqlalchemy.png Graphic file (type bmp)
+<Tech/sqlalchemy.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 711--712
+[]|\TU/TimesNewRoman(0)/m/n/12 SQLAlchemy: Python SQL
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 712--712
+\TU/TimesNewRoman(0)/m/n/12 for the Python-based services,
+ []
+
+File: Tech/ffmpeg.png Graphic file (type bmp)
+<Tech/ffmpeg.png>
+
+Underfull \hbox (badness 3657) in paragraph at lines 716--716
+[]|\TU/TimesNewRoman(0)/m/n/12 Used for RTSP-to-RTP inges-
+ []
+
+File: Tech/webrtc.png Graphic file (type bmp)
+<Tech/webrtc.png>
+File: Tech/mediamtx.png Graphic file (type bmp)
+<Tech/mediamtx.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--724
+[]|\TU/TimesNewRoman(0)/m/n/12 MediaMTX: real-time me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--724
+\TU/TimesNewRoman(0)/m/n/12 dia server supporting RTSP,
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 724--724
+\TU/TimesNewRoman(0)/m/n/12 handling WHIP/WHEP negoti-
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 724--724
+\TU/TimesNewRoman(0)/m/n/12 ation with browsers and keep-
+ []
+
+File: Tech/aws.png Graphic file (type bmp)
+<Tech/aws.png>
+
+Underfull \hbox (badness 2564) in paragraph at lines 727--728
+\TU/TimesNewRoman(0)/m/n/12 for scalable storage, compute,
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 728--728
+[]|\TU/TimesNewRoman(0)/m/n/12 Azure Blob Storage is one of
+ []
+
+
+Underfull \hbox (badness 4132) in paragraph at lines 728--728
+\TU/TimesNewRoman(0)/m/n/12 the three selectable recording
+ []
+
+File: Tech/yolo.png Graphic file (type bmp)
+<Tech/yolo.png>
+
+Underfull \hbox (badness 2726) in paragraph at lines 731--732
+\TU/TimesNewRoman(0)/m/n/12 real-time object detection sys-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 732--732
+[]|\TU/TimesNewRoman(0)/m/n/12 Single-pass architecture pro-
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 732--732
+\TU/TimesNewRoman(0)/m/n/12 to keep up with live feeds —
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 732--732
+\TU/TimesNewRoman(0)/m/n/12 the detection engine the zone
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 732--732
+\TU/TimesNewRoman(0)/m/n/12 alerting subsystem is designed
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [14]
+ignored: Infinite glue shrinkage found in box being split [15]
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
+[]|\TU/TimesNewRoman(0)/m/n/12 Good – WSGI,
+ []
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 751--751
+[]|\TU/TimesNewRoman(0)/b/n/12 Built-in \TU/TimesNewRoman(0)/m/n/12 via Py-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--753
+[]|\TU/TimesNewRoman(0)/b/n/10.95 API Documenta-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--753
+[]|\TU/TimesNewRoman(0)/b/n/12 Auto-generated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--753
+\TU/TimesNewRoman(0)/m/n/12 (Swag-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 755--755
+[]|\TU/TimesNewRoman(0)/b/n/12 Native \TU/TimesNewRoman(0)/m/n/12 Python
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 757--757
+[]|\TU/TimesNewRoman(0)/b/n/12 Excellent \TU/TimesNewRoman(0)/m/n/12 –
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 757--757
+[]|\TU/TimesNewRoman(0)/m/n/12 Complex – heavy
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 759--759
+[]|\TU/TimesNewRoman(0)/b/n/12 Low \TU/TimesNewRoman(0)/m/n/12 – Pythonic,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 761--761
+[]|\TU/TimesNewRoman(0)/b/n/12 Native
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 761--761
+[]|\TU/TimesNewRoman(0)/m/n/12 Partial (Django
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 763--763
+[]|\TU/TimesNewRoman(0)/b/n/12 Excellent \TU/TimesNewRoman(0)/m/n/12 –
+ []
+
+
+Underfull \hbox (badness 6063) in paragraph at lines 763--763
+\TU/TimesNewRoman(0)/m/n/12 lightweight, fast
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 763--763
+[]|\TU/TimesNewRoman(0)/m/n/12 Overkill for mi-
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 784--784
+[]|\TU/TimesNewRoman(0)/b/n/10.95 Concurrency
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 786--786
+[]|\TU/TimesNewRoman(0)/b/n/12 pion/webrtc
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 786--786
+\TU/TimesNewRoman(0)/m/n/12 – mature,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 786--786
+\TU/TimesNewRoman(0)/m/n/12 production-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 786--787
+[]|\TU/TimesNewRoman(0)/m/n/12 Not production-
+ []
+
+
+Underfull \hbox (badness 5091) in paragraph at lines 788--788
+[]|\TU/TimesNewRoman(0)/b/n/12 Compiled\TU/TimesNewRoman(0)/m/n/12 , near-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
+[]|\TU/TimesNewRoman(0)/m/n/12 JIT-compiled,
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 788--789
+[]|\TU/TimesNewRoman(0)/m/n/12 Interpreted, slow-
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 790--790
+[]|\TU/TimesNewRoman(0)/b/n/12 Excellent \TU/TimesNewRoman(0)/m/n/12 – low
+ []
+
+
+Underfull \hbox (badness 6445) in paragraph at lines 790--790
+[]|\TU/TimesNewRoman(0)/m/n/12 Good – V8 GC
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 792--792
+[]|\TU/TimesNewRoman(0)/b/n/10.95 Real-Time Stream-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+[]|\TU/TimesNewRoman(0)/b/n/12 Excellent \TU/TimesNewRoman(0)/m/n/12 –
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\TU/TimesNewRoman(0)/m/n/12 goroutines per
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 794--794
+[]|\TU/TimesNewRoman(0)/b/n/12 Clean \TU/TimesNewRoman(0)/m/n/12 interfaces,
+ []
+
+
+Underfull \hbox (badness 7451) in paragraph at lines 794--794
+[]|\TU/TimesNewRoman(0)/m/n/12 Possible but ver-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
+[]|\TU/TimesNewRoman(0)/b/n/10.95 FFmpeg Integra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
+[]|\TU/TimesNewRoman(0)/b/n/12 Native
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
+\TU/TimesNewRoman(0)/m/n/12 exec.Command,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
+[]|\TU/TimesNewRoman(0)/m/n/12 child_process,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
+\TU/TimesNewRoman(0)/m/n/12 moderate over-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 796--797
+[]|\TU/TimesNewRoman(0)/m/n/12 subprocess, high-
+ []
+
+[17]
+File: charts/streamingAllLang.png Graphic file (type bmp)
+<charts/streamingAllLang.png>
+ [18]
+File: charts/Streamingwithout.png Graphic file (type bmp)
+<charts/Streamingwithout.png>
+
+Underfull \hbox (badness 6364) in paragraph at lines 845--845
+[]|\TU/TimesNewRoman(0)/b/n/12 Native \TU/TimesNewRoman(0)/m/n/12 browser APIs +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 847--847
+[]|\TU/TimesNewRoman(0)/b/n/10.95 TypeScript Integra-
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 849--849
+[]|\TU/TimesNewRoman(0)/b/n/12 High \TU/TimesNewRoman(0)/m/n/12 – hooks and logic
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 853--853
+[]|\TU/TimesNewRoman(0)/b/n/12 High \TU/TimesNewRoman(0)/m/n/12 – both developers
+ []
+
+[19]
+File: Tech/vscode.png Graphic file (type bmp)
+<Tech/vscode.png>
+
+Underfull \hbox (badness 5077) in paragraph at lines 881--881
+[]|\TU/TimesNewRoman(0)/m/n/12 Excellent support for Python,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 881--881
+\TU/TimesNewRoman(0)/m/n/12 Go, TypeScript, and React
+ []
+
+File: Tech/postman.png Graphic file (type bmp)
+<Tech/postman.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 885--885
+[]|\TU/TimesNewRoman(0)/m/n/12 Simplified manual and auto-
+ []
+
+
+Underfull \hbox (badness 7888) in paragraph at lines 885--885
+\TU/TimesNewRoman(0)/m/n/12 across all five microservices.
+ []
+
+File: Tech/docker.png Graphic file (type bmp)
+<Tech/docker.png>
+File: Tech/pgadmin.png Graphic file (type bmp)
+<Tech/pgadmin.png>
+File: Tech/overleaf.png Graphic file (type bmp)
+<Tech/overleaf.png>
+
+Underfull \hbox (badness 1688) in paragraph at lines 896--897
+[]|\TU/TimesNewRoman(0)/m/n/12 Overleaf: collaborative online
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 897--897
+\TU/TimesNewRoman(0)/m/n/12 this report, enabling real-time
+ []
+
+File: Tech/drawio.png Graphic file (type bmp)
+<Tech/drawio.png>
+File: Tech/xcode.png Graphic file (type bmp)
+<Tech/xcode.png>
+File: Tech/jira.png Graphic file (type bmp)
+<Tech/jira.png>
+
+Underfull \hbox (badness 1019) in paragraph at lines 909--909
+\TU/TimesNewRoman(0)/m/n/12 log refinement, and daily task
+ []
+
+File: Tech/notion.png Graphic file (type bmp)
+<Tech/notion.png>
+
+Underfull \hbox (badness 2318) in paragraph at lines 913--913
+[]|\TU/TimesNewRoman(0)/m/n/12 Helped document architectural
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [20] [21] [22]
+Overfull \hbox (20.7748pt too wide) in paragraph at lines 961--962
+[]\TU/TimesNewRoman(0)/b/n/12 Infrastructure Layer: \TU/TimesNewRoman(0)/m/n/12 Concrete implementations of the inner-layer interfaces — SQLAlchemy
+ []
+
+File: Architecture/CleanArchitecture.jpeg Graphic file (type bmp)
+<Architecture/CleanArchitecture.jpeg>
+[23]
+File: Architecture/mvvm.png Graphic file (type bmp)
+<Architecture/mvvm.png>
+ [24]
+Underfull \hbox (badness 10000) in paragraph at lines 1032--1032
+[]|\TU/TimesNewRoman(0)/m/n/10.95 User Registra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1035
+[]|\TU/TimesNewRoman(0)/m/n/10.95 User Authenti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1050
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Invitation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1055
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Membership
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1057--1057
+[]|\TU/TimesNewRoman(0)/m/n/10.95 As a Camera Owner, I want to cre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Group Mem-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Camera Regis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1063--1063
+[]|\TU/TimesNewRoman(0)/m/n/10.95 As a Camera Owner, I want to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1065
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Detection
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1065
+[]|\TU/TimesNewRoman(0)/m/n/10.95 As a Camera Owner, I want to cre-
+ []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 1067--1067
+[]|\TU/TimesNewRoman(0)/m/n/10.95 WebRTC View-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1068
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Recording
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1068
+[]|\TU/TimesNewRoman(0)/m/n/10.95 As a Camera Owner, I want to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+[]|\TU/TimesNewRoman(0)/m/n/10.95 As a Camera Owner, I want to
+ []
+
+[25]
+ignored: Infinite glue shrinkage found in box being split [26]
+ignored: Infinite glue shrinkage found in box being split [27]
+File: diagram report images/general/Generalusecase.drawio.png Graphic file (type bmp)
+<diagram report images/general/Generalusecase.drawio.png>
+ [28]
+Overfull \vbox (143.06557pt too high) has occurred while \output is active []
+
+ [29]
+File: diagram report images/general/ClassGenera;.drawio.png Graphic file (type bmp)
+<diagram report images/general/ClassGenera;.drawio.png>
+ [30] [31]
+Chapter II.
+
+ignored: Infinite glue shrinkage found in box being split [32
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1211--1211
+[]\TU/TimesNewRoman(0)/m/n/10.95 User Regis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1222--1222
+[]\TU/TimesNewRoman(0)/m/n/10.95 Google
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1227--1227
+[]\TU/TimesNewRoman(0)/m/n/10.95 Password
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1236--1236
+[]\TU/TimesNewRoman(0)/m/n/10.95 Login His-
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [33]
+ignored: Infinite glue shrinkage found in box being split [34] [35]
+File: diagram report images/sprint1/Sprint1Usecase.png Graphic file (type bmp)
+<diagram report images/sprint1/Sprint1Usecase.png>
+File: diagram report images/sprint1/Sprint1class.drawio.png Graphic file (type bmp)
+<diagram report images/sprint1/Sprint1class.drawio.png>
+ [36]
+Underfull \hbox (badness 10000) in paragraph at lines 1309--1309
+[]|\TU/TimesNewRoman(0)/b/n/10.95 Alternative Sce-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1338--1338
+[]|\TU/TimesNewRoman(0)/b/n/10.95 Alternative Sce-
+ []
+
+[37]
+File: diagram report images/sprint1/Sprint1class.drawio.png Graphic file (type bmp)
+<diagram report images/sprint1/Sprint1class.drawio.png>
+ [38]
+File: diagram report images/sprint1/auth/register.drawio.png Graphic file (type bmp)
+<diagram report images/sprint1/auth/register.drawio.png>
+File: diagram report images/sprint1/auth/Login Sequence diagram.drawio.png Graphic file (type bmp)
+<diagram report images/sprint1/auth/Login Sequence diagram.drawio.png>
+File: diagram report images/sprint1/auth/ReserPassword.drawio.png Graphic file (type bmp)
+<diagram report images/sprint1/auth/ReserPassword.drawio.png>
+File: diagram report images/sprint1/invitation/CreateInvitation.drawio.png Graphic file (type bmp)
+<diagram report images/sprint1/invitation/CreateInvitation.drawio.png>
+File: diagram report images/sprint1/invitation/accept&declineInvite.drawio.png Graphic file (type bmp)
+<diagram report images/sprint1/invitation/accept&declineInvite.drawio.png>
+File: diagram report images/sprint1/invitation/BulkInvitation.drawio.png Graphic file (type bmp)
+<diagram report images/sprint1/invitation/BulkInvitation.drawio.png>
+ [39] [40] [41] [42] [43] [44] [45] [46] [47]
+Chapter III.
+
+ignored: Infinite glue shrinkage found in box being split [48
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1598--1598
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Build FastAPI camera creation
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 1598--1598
+\TU/TimesNewRoman(0)/m/n/10.95 Unit and integration tests against
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1599--1599
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Implement URL scheme
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1599--1599
+\TU/TimesNewRoman(0)/m/n/10.95 parser inferring protocol
+ []
+
+
+Overfull \hbox (1.54385pt too wide) in paragraph at lines 1599--1599
+\TU/TimesNewRoman(0)/m/n/10.95 (RTSP/HTTP/RTMP/ONVIF/HLS).| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1602--1602
+[]\TU/TimesNewRoman(0)/m/n/10.95 Camera
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1603--1603
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Build GET endpoint returning
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 1603--1603
+\TU/TimesNewRoman(0)/m/n/10.95 owned and shared cameras via a
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 1604--1604
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Implement PATCH endpoint with
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 1604--1604
+\TU/TimesNewRoman(0)/m/n/10.95 permission verification before ap-
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 1605--1605
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Build DELETE and toggle end-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1607--1607
+[]\TU/TimesNewRoman(0)/m/n/10.95 Camera
+ []
+
+
+Underfull \hbox (badness 2150) in paragraph at lines 1608--1608
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Implement heartbeat tracking, la-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1610--1610
+[]\TU/TimesNewRoman(0)/m/n/10.95 Detection
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 1611--1611
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Build zone creation endpoint ac-
+ []
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 1612--1612
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Implement schedule with day-of-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1613--1613
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Build CRUD and acti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1613--1613
+\TU/TimesNewRoman(0)/m/n/10.95 vate/deactivate endpoints for
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 1616--1616
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Implement stream-start triggering
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 1616--1616
+\TU/TimesNewRoman(0)/m/n/10.95 FFmpeg ingestion from the cam-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1621--1621
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Implement WHEP/WHIP-based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1621--1621
+\TU/TimesNewRoman(0)/m/n/10.95 WebRTC negotiation with Me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1621--1621
+\TU/TimesNewRoman(0)/m/n/10.95 diaMTX. Configure SDP of-
+ []
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 1622--1622
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Build JPEG frame extraction via
+ []
+
+
+Underfull \hbox (badness 3884) in paragraph at lines 1622--1622
+\TU/TimesNewRoman(0)/m/n/10.95 FFmpeg; serve the latest frame
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1625--1625
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Implement FFmpeg segmented
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1626--1626
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Build listing endpoint returning
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 1627--1627
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Implement deletion with physical
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 1627--1627
+\TU/TimesNewRoman(0)/m/n/10.95 storage cleanup and database re-
+ []
+
+
+Underfull \hbox (badness 3849) in paragraph at lines 1630--1630
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Implement HTTP Range request
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 1630--1630
+\TU/TimesNewRoman(0)/m/n/10.95 support for browser-native video
+ []
+
+
+Underfull \hbox (badness 3849) in paragraph at lines 1635--1635
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Implement Strategy Pattern with
+ []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 1636--1636
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Develop a retention module with
+ []
+
+
+Underfull \hbox (badness 6944) in paragraph at lines 1639--1639
+\TU/TimesNewRoman(0)/m/n/10.95 metrics endpoints showing total
+ []
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 1639--1639
+\TU/TimesNewRoman(0)/m/n/10.95 stored size, recording count, and
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [49]
+ignored: Infinite glue shrinkage found in box being split [50]
+File: diagram report images/sprint2/Sprint2.drawio.png Graphic file (type bmp)
+<diagram report images/sprint2/Sprint2.drawio.png>
+ [51]
+Underfull \hbox (badness 10000) in paragraph at lines 1686--1686
+[]|\TU/TimesNewRoman(0)/b/n/10.95 Alternative Sce-
+ []
+
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 1712--1712
+[]|\TU/TimesNewRoman(0)/b/n/10.95 Alternative Sce-
+ []
+
+[53]
+File: diagram report images/sprint2/Sprint2class.drawio.png Graphic file (type bmp)
+<diagram report images/sprint2/Sprint2class.drawio.png>
+ [54]
+Underfull \hbox (badness 1466) in paragraph at lines 1737--1738
+ \TU/TimesNewRoman(0)/m/n/12 Figure [][]III.2[][] covers the Sprint II domain entities: \TU/lmtt/m/n/12 Camera\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 Zone\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 StreamSession\TU/TimesNewRoman(0)/m/n/12 ,
+ []
+
+[55]
+File: diagram report images/sprint2/cameramng/RegisterCamera.drawio.png Graphic file (type bmp)
+<diagram report images/sprint2/cameramng/RegisterCamera.drawio.png>
+File: diagram report images/sprint2/cameramng/Zone.drawio.png Graphic file (type bmp)
+<diagram report images/sprint2/cameramng/Zone.drawio.png>
+File: diagram report images/sprint2/cameramng/ListCameras.drawio.png Graphic file (type bmp)
+<diagram report images/sprint2/cameramng/ListCameras.drawio.png>
+ [56]
+File: diagram report images/sprint2/stream/Stop$StartStreaming.drawio.png Graphic file (type bmp)
+<diagram report images/sprint2/stream/Stop$StartStreaming.drawio.png>
+File: diagram report images/sprint2/stream/WebRtcViewer.drawio.png Graphic file (type bmp)
+<diagram report images/sprint2/stream/WebRtcViewer.drawio.png>
+ [57]
+File: diagram report images/sprint2/stream/GetLatestFrame.drawio.png Graphic file (type bmp)
+<diagram report images/sprint2/stream/GetLatestFrame.drawio.png>
+File: diagram report images/sprint2/storage/Start&StopRec.drawio.png Graphic file (type bmp)
+<diagram report images/sprint2/storage/Start&StopRec.drawio.png>
+ [58]
+File: diagram report images/sprint2/storage/DownloadRecording.drawio.png Graphic file (type bmp)
+<diagram report images/sprint2/storage/DownloadRecording.drawio.png>
+File: diagram report images/sprint2/storage/AutoRentetion.drawio.png Graphic file (type bmp)
+<diagram report images/sprint2/storage/AutoRentetion.drawio.png>
+ [59] [60] [61] [62] [63] [64] [65] [66] [67
+
+] [68]
+Underfull \hbox (badness 4531) in paragraph at lines 1968--1969
+[]\TU/TimesNewRoman(0)/m/n/12 FASTAPI. \TU/TimesNewRoman(0)/m/it/12 FastAPI Documentation \TU/TimesNewRoman(0)/m/n/12 [online]. Available at: [][]$[][][][][] [] [] [] [][][][][][][] []
+ []
+
+[69
+
+]
+Underfull \hbox (badness 3250) in paragraph at lines 1984--1985
+[]\TU/TimesNewRoman(0)/m/n/12 ULTRALYTICS. \TU/TimesNewRoman(0)/m/it/12 YOLO Documentation \TU/TimesNewRoman(0)/m/n/12 [online]. Available at: [][]$[][][][][] [] [] [] [][][][] []
+ []
+
+[70] (./main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: A72B76CC5ECDD0C7E60F670590AB797D;13336.
+ ) 
+Here is how much of TeX's memory you used:
+ 38731 strings out of 469709
+ 929936 string characters out of 5466024
+ 1528221 words of memory out of 5000000
+ 66693 multiletter control sequences out of 15000+600000
+ 634514 words of font info for 95 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 84i,13n,104p,1223b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.pdf (84 pages).

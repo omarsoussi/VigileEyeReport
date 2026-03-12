@@ -1,0 +1,56 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {I.1}{\ignorespaces IBSOFT Logo}}{4}{figure.caption.6}%
+\contentsline {figure}{\numberline {I.2}{\ignorespaces Traditional DVR/NVR surveillance system}}{5}{figure.caption.7}%
+\contentsline {figure}{\numberline {I.3}{\ignorespaces The Milestone XProtect interface}}{5}{figure.caption.8}%
+\contentsline {figure}{\numberline {I.4}{\ignorespaces The Frigate NVR interface}}{6}{figure.caption.9}%
+\contentsline {figure}{\numberline {I.5}{\ignorespaces SCRUM methodology cycle}}{8}{figure.caption.10}%
+\contentsline {figure}{\numberline {I.6}{\ignorespaces Jira logo}}{10}{figure.caption.11}%
+\contentsline {figure}{\numberline {I.7}{\ignorespaces GitHub logo}}{10}{figure.caption.12}%
+\contentsline {figure}{\numberline {I.8}{\ignorespaces Static Context Diagram}}{12}{figure.caption.13}%
+\contentsline {figure}{\numberline {I.9}{\ignorespaces Performance comparison: Go standalone vs.\ Go + MediaMTX}}{18}{figure.caption.18}%
+\contentsline {figure}{\numberline {I.10}{\ignorespaces Streaming stack comparison: Go+MediaMTX vs.\ Node.js vs.\ FastAPI}}{19}{figure.caption.19}%
+\contentsline {figure}{\numberline {I.11}{\ignorespaces Git Workflow}}{22}{figure.caption.21}%
+\contentsline {figure}{\numberline {I.12}{\ignorespaces Clean Architecture pattern}}{23}{figure.caption.23}%
+\contentsline {figure}{\numberline {I.13}{\ignorespaces VigileEye Microservices Architecture}}{24}{figure.caption.24}%
+\contentsline {figure}{\numberline {I.14}{\ignorespaces MVVM Architecture Pattern (React Frontend)}}{24}{figure.caption.25}%
+\contentsline {figure}{\numberline {I.15}{\ignorespaces General architecture of the VigileEye application}}{25}{figure.caption.26}%
+\contentsline {figure}{\numberline {I.16}{\ignorespaces Global System Use Case Diagram}}{29}{figure.caption.27}%
+\contentsline {figure}{\numberline {I.17}{\ignorespaces Global Class Diagram of the VigileEye Platform}}{30}{figure.caption.28}%
+\contentsline {figure}{\numberline {I.18}{\ignorespaces Gantt Diagram}}{31}{figure.caption.29}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {II.1}{\ignorespaces Use Case Diagram -- Sprint I (Global Overview)}}{36}{figure.caption.30}%
+\contentsline {figure}{\numberline {II.2}{\ignorespaces Class Diagram -- Sprint I Schema (Preview)}}{36}{figure.caption.31}%
+\contentsline {figure}{\numberline {II.3}{\ignorespaces Class Diagram -- Sprint I Schema}}{39}{figure.caption.34}%
+\contentsline {figure}{\numberline {II.4}{\ignorespaces Sequence Diagram: Registration \& Email Verification}}{40}{figure.caption.35}%
+\contentsline {figure}{\numberline {II.5}{\ignorespaces Sequence Diagram: Login with Two-Factor Authentication}}{40}{figure.caption.36}%
+\contentsline {figure}{\numberline {II.6}{\ignorespaces Sequence Diagram: Forget \& Reset Password}}{41}{figure.caption.37}%
+\contentsline {figure}{\numberline {II.7}{\ignorespaces Sequence Diagram: Camera Sharing Invitation}}{41}{figure.caption.38}%
+\contentsline {figure}{\numberline {II.8}{\ignorespaces Sequence Diagram: Accept / Decline Invitation}}{42}{figure.caption.39}%
+\contentsline {figure}{\numberline {II.9}{\ignorespaces Sequence Diagram: Group Management \& Bulk Invitation}}{42}{figure.caption.40}%
+\contentsline {figure}{\numberline {II.10}{\ignorespaces Registration interface}}{43}{figure.caption.41}%
+\contentsline {figure}{\numberline {II.11}{\ignorespaces Email OTP Verification interface}}{43}{figure.caption.42}%
+\contentsline {figure}{\numberline {II.12}{\ignorespaces Login interface}}{44}{figure.caption.43}%
+\contentsline {figure}{\numberline {II.13}{\ignorespaces Forgot Password interface}}{44}{figure.caption.44}%
+\contentsline {figure}{\numberline {II.14}{\ignorespaces Login History interface}}{45}{figure.caption.45}%
+\contentsline {figure}{\numberline {II.15}{\ignorespaces Send Invitation interface}}{45}{figure.caption.46}%
+\contentsline {figure}{\numberline {II.16}{\ignorespaces Group Management interface}}{46}{figure.caption.47}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {III.1}{\ignorespaces Use Case Diagram -- Sprint II (Overview)}}{52}{figure.caption.48}%
+\contentsline {figure}{\numberline {III.2}{\ignorespaces Class Diagram -- Sprint II Schema}}{55}{figure.caption.51}%
+\contentsline {figure}{\numberline {III.3}{\ignorespaces Sequence Diagram: Camera Registration}}{56}{figure.caption.52}%
+\contentsline {figure}{\numberline {III.4}{\ignorespaces Sequence Diagram: Detection Zone Creation}}{56}{figure.caption.53}%
+\contentsline {figure}{\numberline {III.5}{\ignorespaces Sequence Diagram: List Cameras}}{57}{figure.caption.54}%
+\contentsline {figure}{\numberline {III.6}{\ignorespaces Sequence Diagram: Start \& Stop Live Streaming}}{57}{figure.caption.55}%
+\contentsline {figure}{\numberline {III.7}{\ignorespaces Sequence Diagram: WebRTC Viewer Negotiation}}{58}{figure.caption.56}%
+\contentsline {figure}{\numberline {III.8}{\ignorespaces Sequence Diagram: Get Latest Frame (HTTP Fallback)}}{58}{figure.caption.57}%
+\contentsline {figure}{\numberline {III.9}{\ignorespaces Sequence Diagram: Start \& Stop Recording}}{59}{figure.caption.58}%
+\contentsline {figure}{\numberline {III.10}{\ignorespaces Sequence Diagram: Recording Download}}{59}{figure.caption.59}%
+\contentsline {figure}{\numberline {III.11}{\ignorespaces Sequence Diagram: Auto-Retention}}{60}{figure.caption.60}%
+\contentsline {figure}{\numberline {III.12}{\ignorespaces Camera Management Dashboard}}{61}{figure.caption.61}%
+\contentsline {figure}{\numberline {III.13}{\ignorespaces Add Camera interface}}{61}{figure.caption.62}%
+\contentsline {figure}{\numberline {III.14}{\ignorespaces Detection Zone Configuration interface}}{62}{figure.caption.63}%
+\contentsline {figure}{\numberline {III.15}{\ignorespaces Live Monitoring interface}}{62}{figure.caption.64}%
+\contentsline {figure}{\numberline {III.16}{\ignorespaces Single Camera Stream view with controls}}{63}{figure.caption.65}%
+\contentsline {figure}{\numberline {III.17}{\ignorespaces Recordings Management interface}}{63}{figure.caption.66}%
+\contentsline {figure}{\numberline {III.18}{\ignorespaces Storage Configuration interface}}{64}{figure.caption.67}%
