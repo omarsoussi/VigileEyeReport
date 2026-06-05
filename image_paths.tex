@@ -1,0 +1,61 @@
+% Centralized image paths for main.tex
+% Edit paths here instead of hunting through the whole document.
+
+% Base directories (relative to report_final/)
+\newcommand{\TechDir}{Tech}
+\newcommand{\MachinesDir}{Machines}
+\newcommand{\CaseStudyDir}{casestudy}
+\newcommand{\ArchDir}{Architecture}
+\newcommand{\IbsoftDir}{ibsoft}
+\newcommand{\ChartsDir}{charts}
+\newcommand{\UIDir}{ui_screenshots}
+
+% Helper path builders (no spaces in these directory names)
+\newcommand{\PathTech}[1]{\TechDir/#1}
+\newcommand{\PathMachines}[1]{\MachinesDir/#1}
+\newcommand{\PathCaseStudy}[1]{\CaseStudyDir/#1}
+\newcommand{\PathArch}[1]{\ArchDir/#1}
+\newcommand{\PathIbsoft}[1]{\IbsoftDir/#1}
+\newcommand{\PathCharts}[1]{\ChartsDir/#1}
+\newcommand{\PathUI}[1]{\UIDir/#1}
+
+% Make graphics paths explicit so xelatex can locate images reliably
+\graphicspath{{Tech/}{Machines/}{casestudy/}{Architecture/}{ibsoft/}{charts/}{ui_screenshots/}{diagram report images/}}
+
+% The diagrams folder name contains spaces, so it must be detokenized.
+% If you ever rename that folder, update the string inside this macro.
+\newcommand{\DiagramPath}[1]{\detokenize{diagram report images/#1}}
+\newcommand{\UIScreenPath}[1]{\detokenize{ui_screenshots/#1}}
+
+% Generic logo helper: include the image if it exists, otherwise show text.
+% Use this for technologies where you may add a logo later.
+\newcommand{\LogoOrText}[2]{%
+  \IfFileExists{#1}{%
+    \begin{minipage}[c][1.95cm][c]{\linewidth}
+      \centering
+      \includegraphics[width=0.78\linewidth,height=1.55cm,keepaspectratio]{#1}
+    \end{minipage}%
+  }{%
+    \begin{minipage}[c][1.95cm][c]{\linewidth}
+      \centering
+      \textbf{#2}
+    \end{minipage}%
+  }%
+}
+
+% Optional technology logos (add files and/or change paths here)
+\newcommand{\LogoStripe}{Tech/stripe.png}
+\newcommand{\LogoWebSocket}{Tech/websocket.png}
+\newcommand{\LogoLangChain}{Tech/langchain.png}
+\newcommand{\LogoGroq}{Tech/groq.png}
+\newcommand{\LogoHuggingFace}{Tech/huggingface.png}
+\newcommand{\LogoRedis}{Tech/redis.png}
+% Some tools are referenced by alternative names in the text (FCM -> Firebase, Tailwind misspelled 'thainwand')
+\providecommand{\LogoFCM}{Tech/firebase.png}
+\providecommand{\LogoTailwind}{Tech/tailwind.png}
+\newcommand{\LogoFirebase}{Tech/firebase.png}
+\newcommand{\LogoVite}{Tech/vite.png}
+\newcommand{\LogoGin}{Tech/gin.png}
+\newcommand{\LogoPion}{Tech/pion.png}
+\newcommand{\LogoMinIO}{Tech/minio.png}
+\providecommand{\LogoTraefik}{Tech/traefik.png}

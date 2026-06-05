@@ -1,0 +1,26 @@
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{Functional Requirements by Actor}}{15}{}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Hardware Specifications of MacBook Pro M1 Pro}}{16}{}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces Hardware Specifications of Lenovo IdeaPad}}{16}{}%
+\contentsline {table}{\numberline {1.4}{Technological Environment}}{20}{}%
+\contentsline {table}{\numberline {1.5}{Software Environment}}{23}{}%
+\contentsline {table}{\numberline {1.6}{Product Backlog}}{27}{}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{Sprint I User Stories}}{31}{}%
+\contentsline {table}{\numberline {2.2}{Sprint I Backlog}}{34}{}%
+\contentsline {table}{\numberline {2.3}{Use Case: Camera Workspace Operations}}{35}{}%
+\contentsline {table}{\numberline {2.4}{Use Case: Live Stream Operations}}{36}{}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{Sprint II User Stories}}{49}{}%
+\contentsline {table}{\numberline {3.2}{Sprint II Backlog}}{51}{}%
+\contentsline {table}{\numberline {3.3}{Use Case: Intelligent Monitoring Operations}}{52}{}%
+\contentsline {table}{\numberline {3.4}{Use Case: Monetization and AI Insights}}{53}{}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{Sprint III User Stories}}{67}{}%
+\contentsline {table}{\numberline {4.2}{Sprint III Backlog}}{69}{}%
+\contentsline {table}{\numberline {4.3}{Use Case: Account Access Operations}}{71}{}%
+\contentsline {table}{\numberline {4.4}{Use Case: Invitation and Group Collaboration}}{71}{}%
+\contentsline {table}{\numberline {4.5}{Comparative Analysis of Agile Methodologies}}{87}{}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces FastAPI vs.\ Django REST Framework vs.\ Flask -- Comparison for Auth \& Camera Management Services}}{87}{}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Go vs.\ Node.js vs.\ Python/FastAPI -- Comparison for Streaming \& Storage Services}}{88}{}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Ionic React + Capacitor vs.\ Flutter -- Frontend Technology Comparison}}{90}{}%

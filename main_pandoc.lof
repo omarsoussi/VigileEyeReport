@@ -1,0 +1,56 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces IBSOFT Logo}}{4}{}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Traditional DVR/NVR surveillance system}}{6}{}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces The Milestone XProtect interface}}{6}{}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces The Frigate NVR interface}}{7}{}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces SCRUM methodology cycle}}{10}{}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Jira logo}}{11}{}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces GitHub logo}}{11}{}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Static Context Diagram}}{13}{}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Clean Architecture pattern}}{24}{}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces VigileEye Microservices Architecture}}{24}{}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces MVVM Architecture Pattern (React Frontend)}}{25}{}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces General architecture of the VigileEye application}}{26}{}%
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Global System Use Case Diagram}}{28}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Use Case Diagram -- Sprint I (Overview)}}{37}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Class Diagram -- Sprint I Schema}}{39}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Sequence Diagram: Detection Zone - Create Zone}}{40}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Sequence Diagram: Live Stream - WebRTC negotiation}}{40}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Sequence Diagram: Recording - Start \& Stop Recording}}{41}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Camera Management Dashboard}}{41}{}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Add Camera interface}}{42}{}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Detection Zone Configuration interface}}{42}{}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Live Monitoring interface}}{43}{}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Single Camera Stream view with controls}}{44}{}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Recordings Management interface}}{44}{}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Storage Configuration interface}}{45}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram -- Sprint II (Overview)}}{54}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Class Diagram -- Sprint II Schema}}{55}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Sequence Diagram: Detection Console - Start and Run Detection Session}}{56}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Sequence Diagram: Real-Time Alerts - Deduplicate and Dispatch Alert}}{57}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Sequence Diagram: Real-Time Analytics - Dashboard Snapshot and Periodic Refresh}}{57}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Sequence Diagram: AI Chat Assistant - Guarded Analytics Query}}{58}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Sequence Diagram: Subscription and Billing - Checkout, Activation, and Webhook Receipt}}{59}{}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Detection Console interface}}{60}{}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Real-Time Alerts interface}}{60}{}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Real-Time Analytics dashboard}}{61}{}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces AI Chat Assistant interface}}{62}{}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Subscription checkout interface}}{62}{}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Billing history interface}}{63}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Use Case Diagram - Sprint III (Overview)}}{70}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Class Diagram -- Sprint III Schema}}{73}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Sequence Diagram: Password Management - Request Reset \& Set New Password}}{74}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram: Membership - Accept / Decline Invitation}}{74}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Sequence Diagram: Invitations - Create \& Send Invitation}}{75}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Registration interface}}{75}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Email OTP Verification interface}}{76}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Login interface}}{77}{}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Forgot Password interface}}{77}{}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Login History interface}}{78}{}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Send Invitation interface}}{79}{}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Group Management interface}}{79}{}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Performance comparison: Go standalone vs.\ Go + MediaMTX}}{89}{}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Streaming stack comparison: Go+MediaMTX vs.\ Node.js vs.\ FastAPI}}{89}{}%

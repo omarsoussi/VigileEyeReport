@@ -1,0 +1,286 @@
+PWD /Users/mac/Desktop/PFE/report_final
+INPUT /usr/local/texlive/2026basic/texmf.cnf
+INPUT /usr/local/texlive/2026basic/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2026basic/texmf-var/web2c/xetex/xelatex.fmt
+INPUT main_pandoc.tex
+OUTPUT main_pandoc.log
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/base/report.cls
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/base/report.cls
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-def/xetex.def
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-def/xetex.def
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-def/xetex.def
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/needspace/needspace.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/needspace/needspace.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/psnfss/pifont.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/psnfss/pifont.sty
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/psnfss/upzd.fd
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/psnfss/upzd.fd
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/psnfss/upzd.fd
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/psnfss/upsy.fd
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/psnfss/upsy.fd
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/psnfss/upsy.fd
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
+INPUT ./image_paths.tex
+INPUT ./image_paths.tex
+INPUT ./image_paths.tex
+INPUT ./image_paths.tex
+INPUT image_paths.tex
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT ./main_pandoc.aux
+INPUT ./main_pandoc.aux
+INPUT main_pandoc.aux
+OUTPUT main_pandoc.aux
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT ./main_pandoc.toc
+INPUT ./main_pandoc.toc
+INPUT main_pandoc.toc
+OUTPUT main_pandoc.toc
+INPUT ./main_pandoc.lof
+INPUT ./main_pandoc.lof
+INPUT main_pandoc.lof
+OUTPUT main_pandoc.lof
+INPUT ./main_pandoc.lot
+INPUT ./main_pandoc.lot
+INPUT main_pandoc.lot
+OUTPUT main_pandoc.lot
+INPUT ./ibsoft/images.png
+INPUT ./ibsoft/images.png
+INPUT ./ibsoft/images.png
+INPUT ./casestudy/DVR.png
+INPUT ./casestudy/DVR.png
+INPUT ./casestudy/DVR.png
+INPUT ./casestudy/milestone.png
+INPUT ./casestudy/milestone.png
+INPUT ./casestudy/milestone.png
+INPUT ./casestudy/frigate.png
+INPUT ./casestudy/frigate.png
+INPUT ./casestudy/frigate.png
+INPUT ./casestudy/scrum.png
+INPUT ./casestudy/scrum.png
+INPUT ./Tech/jira.png
+INPUT ./Tech/jira.png
+INPUT ./Tech/github.png
+INPUT ./Tech/github.png
+INPUT ./casestudy/static.png
+INPUT ./casestudy/static.png
+INPUT ./Machines/mac.png
+INPUT ./Machines/mac.png
+INPUT ./Machines/lenovo.png
+INPUT ./Machines/lenovo.png
+INPUT ./Tech/fastapi.png
+INPUT ./Tech/fastapi.png
+INPUT ./Tech/go.png
+INPUT ./Tech/go.png
+INPUT ./Tech/react.png
+INPUT ./Tech/react.png
+INPUT ./Tech/react.png
+INPUT ./Tech/react.png
+INPUT ./Tech/stripe.png
+INPUT ./Tech/stripe.png
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./Tech/websocket.png
+INPUT ./Tech/websocket.png
+INPUT ./Tech/langchain.png
+INPUT ./Tech/langchain.png
+INPUT ./Tech/groq.png
+INPUT ./Tech/groq.png
+INPUT ./Tech/huggingface.png
+INPUT ./Tech/huggingface.png
+INPUT ./Tech/redis.png
+INPUT ./Tech/redis.png
+INPUT ./Tech/firebase.png
+INPUT ./Tech/firebase.png
+INPUT ./Tech/typescript.png
+INPUT ./Tech/typescript.png
+INPUT ./Tech/postgresql.png
+INPUT ./Tech/postgresql.png
+INPUT ./Tech/sqlalchemy.png
+INPUT ./Tech/sqlalchemy.png
+INPUT ./Tech/ffmpeg.png
+INPUT ./Tech/ffmpeg.png
+INPUT ./Tech/webrtc.png
+INPUT ./Tech/webrtc.png
+INPUT ./Tech/mediamtx.png
+INPUT ./Tech/mediamtx.png
+INPUT ./Tech/gin.png
+INPUT ./Tech/gin.png
+INPUT ./Tech/pion.png
+INPUT ./Tech/pion.png
+INPUT ./Tech/tailwind.png
+INPUT ./Tech/tailwind.png
+INPUT ./Tech/vite.png
+INPUT ./Tech/vite.png
+INPUT ./Tech/minio.png
+INPUT ./Tech/minio.png
+INPUT ./Tech/traefik.png
+INPUT ./Tech/traefik.png
+INPUT ./Tech/aws.png
+INPUT ./Tech/aws.png
+INPUT ./Tech/digiocean.png
+INPUT ./Tech/digiocean.png
+INPUT ./Tech/yolo.png
+INPUT ./Tech/yolo.png
+INPUT ./Tech/vscode.png
+INPUT ./Tech/vscode.png
+INPUT ./Tech/postman.png
+INPUT ./Tech/postman.png
+INPUT ./Tech/docker.png
+INPUT ./Tech/docker.png
+INPUT ./Tech/pgadmin.png
+INPUT ./Tech/pgadmin.png
+INPUT ./Tech/overleaf.png
+INPUT ./Tech/overleaf.png
+INPUT ./Tech/drawio.png
+INPUT ./Tech/drawio.png
+INPUT ./Tech/xcode.png
+INPUT ./Tech/xcode.png
+INPUT ./Tech/jira.png
+INPUT ./Tech/jira.png
+INPUT ./Tech/notion.png
+INPUT ./Tech/notion.png
+INPUT ./Architecture/CleanArchitecture.jpeg
+INPUT ./Architecture/CleanArchitecture.jpeg
+INPUT ./Architecture/microservice.png
+INPUT ./Architecture/microservice.png
+INPUT ./Architecture/mvvm.png
+INPUT ./Architecture/mvvm.png
+INPUT ./casestudy/arch.png
+INPUT ./casestudy/arch.png
+INPUT ./diagram report images/general.drawio.png
+INPUT ./diagram report images/general.drawio.png
+INPUT ./diagram report images/general.drawio.png
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT ./diagram report images/sprint1usecase.jpg
+INPUT ./diagram report images/sprint1usecase.jpg
+INPUT ./diagram report images/sprint1usecase.jpg
+INPUT ./diagram report images/Sprint1_Class_Diagram.jpg
+INPUT ./diagram report images/Sprint1_Class_Diagram.jpg
+INPUT ./diagram report images/Sprint1_Class_Diagram.jpg
+INPUT ./diagram report images/sprint2/cameramng/Zone.drawio.png
+INPUT ./diagram report images/sprint2/cameramng/Zone.drawio.png
+INPUT ./diagram report images/sprint2/cameramng/Zone.drawio.png
+INPUT ./diagram report images/sprint2/stream/WebRtcViewer.drawio.png
+INPUT ./diagram report images/sprint2/stream/WebRtcViewer.drawio.png
+INPUT ./diagram report images/sprint2/stream/WebRtcViewer.drawio.png
+INPUT ./diagram report images/sprint2/storage/Start&StopRec.drawio.png
+INPUT ./diagram report images/sprint2/storage/Start&StopRec.drawio.png
+INPUT ./diagram report images/sprint2/storage/Start&StopRec.drawio.png
+INPUT ./diagram report images/Sprint2usecase.drawio.png
+INPUT ./diagram report images/Sprint2usecase.drawio.png
+INPUT ./diagram report images/Sprint2usecase.drawio.png
+INPUT ./diagram report images/sprint2class.drawio.png
+INPUT ./diagram report images/sprint2class.drawio.png
+INPUT ./diagram report images/sprint2class.drawio.png
+INPUT ./diagram report images/DetetectionSeq.drawio.png
+INPUT ./diagram report images/DetetectionSeq.drawio.png
+INPUT ./diagram report images/DetetectionSeq.drawio.png
+INPUT ./diagram report images/RealTimeAlerts.drawio.png
+INPUT ./diagram report images/RealTimeAlerts.drawio.png
+INPUT ./diagram report images/RealTimeAlerts.drawio.png
+INPUT ./diagram report images/RealTimeAnalytics.drawio.png
+INPUT ./diagram report images/RealTimeAnalytics.drawio.png
+INPUT ./diagram report images/RealTimeAnalytics.drawio.png
+INPUT ./diagram report images/ChatWithAI.drawio.png
+INPUT ./diagram report images/ChatWithAI.drawio.png
+INPUT ./diagram report images/ChatWithAI.drawio.png
+INPUT ./diagram report images/payseq.drawio.png
+INPUT ./diagram report images/payseq.drawio.png
+INPUT ./diagram report images/payseq.drawio.png
+INPUT ./diagram report images/sprint4usecase.jpg
+INPUT ./diagram report images/sprint4usecase.jpg
+INPUT ./diagram report images/sprint4usecase.jpg
+INPUT ./diagram report images/sprint4class.jpg
+INPUT ./diagram report images/sprint4class.jpg
+INPUT ./diagram report images/sprint4class.jpg
+INPUT ./diagram report images/sprint1/auth/ReserPassword.drawio.png
+INPUT ./diagram report images/sprint1/auth/ReserPassword.drawio.png
+INPUT ./diagram report images/sprint1/auth/ReserPassword.drawio.png
+INPUT ./diagram report images/sprint1/invitation/accept&declineInvite.drawio.png
+INPUT ./diagram report images/sprint1/invitation/accept&declineInvite.drawio.png
+INPUT ./diagram report images/sprint1/invitation/accept&declineInvite.drawio.png
+INPUT ./diagram report images/sprint1/invitation/BulkInvitation.drawio.png
+INPUT ./diagram report images/sprint1/invitation/BulkInvitation.drawio.png
+INPUT ./diagram report images/sprint1/invitation/BulkInvitation.drawio.png
+INPUT ./charts/streamingAllLang.png
+INPUT ./charts/streamingAllLang.png
+INPUT ./charts/Streamingwithout.png
+INPUT ./charts/Streamingwithout.png
+INPUT main_pandoc.aux

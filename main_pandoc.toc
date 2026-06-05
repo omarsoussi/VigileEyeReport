@@ -1,0 +1,89 @@
+\contentsline {chapter}{Abbreviations}{vi}{}%
+\contentsline {chapter}{General Introduction}{1}{}%
+\contentsline {chapter}{\numberline {1}Project Context and Requirements Analysis}{3}{}%
+\contentsline {section}{\numberline {1.1}General Context and Preliminary Study}{3}{}%
+\contentsline {subsection}{\numberline {1.1.1}General Context of the Project}{3}{}%
+\contentsline {subsubsection}{Project Context}{3}{}%
+\contentsline {subsubsection}{Hosting Organization}{4}{}%
+\contentsline {subsection}{\numberline {1.1.2}Project Presentation}{5}{}%
+\contentsline {subsubsection}{Challenges}{5}{}%
+\contentsline {subsubsection}{Current System Assessment}{5}{}%
+\contentsline {subsubsection}{Criticism of the Existing System}{7}{}%
+\contentsline {subsubsection}{Project Goals}{8}{}%
+\contentsline {subsubsection}{Solution Overview}{9}{}%
+\contentsline {subsection}{\numberline {1.1.3}Investigation of Approaches}{9}{}%
+\contentsline {subsubsection}{Agile Methodology: Scrum}{9}{}%
+\contentsline {subsubsection}{Methodology Comparison: Scrum, XP, and Kanban}{10}{}%
+\contentsline {subsubsection}{Why Scrum}{10}{}%
+\contentsline {subsubsection}{Project Management with Jira}{10}{}%
+\contentsline {subsubsection}{Version Control with GitHub}{11}{}%
+\contentsline {section}{\numberline {1.2}Requirements Analysis and Specifications}{12}{}%
+\contentsline {subsection}{\numberline {1.2.1}Requirements Analysis}{12}{}%
+\contentsline {subsubsection}{Actors Identification}{12}{}%
+\contentsline {subsubsection}{Static Context Diagram}{13}{}%
+\contentsline {subsubsection}{Functional Requirements}{13}{}%
+\contentsline {subsubsection}{Non-Functional Requirements}{15}{}%
+\contentsline {subsection}{\numberline {1.2.2}Technical Specifications}{16}{}%
+\contentsline {subsubsection}{Hardware Environment}{16}{}%
+\contentsline {subsubsection}{Technological Environment}{17}{}%
+\contentsline {paragraph}{Why FastAPI for the Authentication and Camera Management Services?}{21}{}%
+\contentsline {paragraph}{Why Go (Golang) for the Streaming and Storage Services?}{21}{}%
+\contentsline {paragraph}{Streaming Performance: Go Alone vs.\ Go + MediaMTX}{21}{}%
+\contentsline {paragraph}{Streaming Framework Comparison: Go+MediaMTX vs.\ Node.js vs.\ FastAPI}{21}{}%
+\contentsline {paragraph}{Why Ionic React + Capacitor for the Frontend?}{21}{}%
+\contentsline {subsubsection}{Software Environment}{21}{}%
+\contentsline {subsection}{\numberline {1.2.3}Project Architecture}{23}{}%
+\contentsline {subsubsection}{Clean Architecture}{23}{}%
+\contentsline {subsubsection}{Microservices Architecture}{24}{}%
+\contentsline {subsubsection}{Frontend Architecture: MVVM}{25}{}%
+\contentsline {subsubsection}{Backend Service Architectures}{25}{}%
+\contentsline {subsubsection}{Overall Application Structure}{25}{}%
+\contentsline {subsection}{\numberline {1.2.4}Scrum Methodology in Project Management}{25}{}%
+\contentsline {subsection}{\numberline {1.2.5}Product Backlog}{26}{}%
+\contentsline {subsection}{\numberline {1.2.6}Global System Use Case Diagram}{28}{}%
+\contentsline {subsection}{\numberline {1.2.7}Sprint Planning}{28}{}%
+\contentsline {chapter}{\numberline {2}Implementation of Sprint I: Camera \& Stream Management}{30}{}%
+\contentsline {section}{\numberline {2.1}Introduction}{30}{}%
+\contentsline {section}{\numberline {2.2}Sprint I Backlog}{30}{}%
+\contentsline {section}{\numberline {2.3}Functional Overview -- Sprint I}{34}{}%
+\contentsline {subsection}{\numberline {2.3.1}Use Case Diagrams -- Sprint I}{34}{}%
+\contentsline {subsection}{\numberline {2.3.2}Textual Use Case Specification -- Sprint I}{34}{}%
+\contentsline {section}{\numberline {2.4}Conception Overview of Sprint I}{38}{}%
+\contentsline {subsection}{\numberline {2.4.1}Class Diagrams -- Sprint I}{38}{}%
+\contentsline {subsection}{\numberline {2.4.2}Sequence Diagrams -- Sprint I}{38}{}%
+\contentsline {section}{\numberline {2.5}Realisation of Sprint I}{38}{}%
+\contentsline {section}{\numberline {2.6}The Review of Sprint I}{45}{}%
+\contentsline {section}{\numberline {2.7}Sprint I Retrospective}{46}{}%
+\contentsline {chapter}{\numberline {3}Implementation of Sprint II: Intelligent Monitoring \& Monetization}{48}{}%
+\contentsline {section}{\numberline {3.1}Introduction}{48}{}%
+\contentsline {section}{\numberline {3.2}Sprint II Backlog}{48}{}%
+\contentsline {section}{\numberline {3.3}Functional Overview -- Sprint II}{51}{}%
+\contentsline {subsection}{\numberline {3.3.1}Use Case Diagrams -- Sprint II}{51}{}%
+\contentsline {subsection}{\numberline {3.3.2}Textual Use Case Specification -- Sprint II}{51}{}%
+\contentsline {section}{\numberline {3.4}Conception Overview of Sprint II}{53}{}%
+\contentsline {subsection}{\numberline {3.4.1}Class Diagrams -- Sprint II}{53}{}%
+\contentsline {subsection}{\numberline {3.4.2}Sequence Diagrams -- Sprint II}{56}{}%
+\contentsline {section}{\numberline {3.5}Realisation of Sprint II}{56}{}%
+\contentsline {section}{\numberline {3.6}The Review of Sprint II}{61}{}%
+\contentsline {section}{\numberline {3.7}Sprint II Retrospective}{63}{}%
+\contentsline {chapter}{\numberline {4}Implementation of Sprint III: Authentication \& Members Invitation}{65}{}%
+\contentsline {section}{\numberline {4.1}Introduction}{65}{}%
+\contentsline {section}{\numberline {4.2}Sprint III Backlog}{65}{}%
+\contentsline {section}{\numberline {4.3}Functional Overview -- Sprint III}{69}{}%
+\contentsline {subsection}{\numberline {4.3.1}Use Case Diagrams -- Sprint III}{69}{}%
+\contentsline {subsection}{\numberline {4.3.2}Textual Use Case Specification -- Sprint III}{69}{}%
+\contentsline {section}{\numberline {4.4}Conception Overview of Sprint III}{72}{}%
+\contentsline {subsection}{\numberline {4.4.1}Class Diagrams -- Sprint III}{72}{}%
+\contentsline {subsection}{\numberline {4.4.2}Sequence Diagrams -- Sprint III}{72}{}%
+\contentsline {section}{\numberline {4.5}Realisation of Sprint III}{72}{}%
+\contentsline {section}{\numberline {4.6}The Review of Sprint III}{78}{}%
+\contentsline {section}{\numberline {4.7}Sprint III Retrospective}{80}{}%
+\contentsline {chapter}{General Conclusion}{82}{}%
+\contentsline {chapter}{Bibliography \& Netography}{84}{}%
+\contentsline {chapter}{Appendices}{86}{}%
+\contentsline {section}{Appendix A: Comparative Analysis of Agile Methodologies}{86}{}%
+\contentsline {section}{Appendix B: Backend Framework Comparison (FastAPI, Django REST Framework, Flask)}{87}{}%
+\contentsline {section}{Appendix C: Streaming \& Storage Technology Comparison}{88}{}%
+\contentsline {section}{Appendix D: Performance Comparison (Go vs.\ Go + MediaMTX)}{90}{}%
+\contentsline {section}{Appendix E: Streaming Stack Comparison}{90}{}%
+\contentsline {section}{Appendix F: Frontend Technology Comparison}{90}{}%

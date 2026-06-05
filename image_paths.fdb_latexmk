@@ -1,0 +1,12 @@
+# Fdb version 4
+["pdflatex"] 1780623148.32185 "image_paths.tex" "image_paths.pdf" "image_paths" 1780623148.45973 2
+  "/usr/local/texlive/2026basic/texmf-dist/web2c/texmf.cnf" 1770478701 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
+  "/usr/local/texlive/2026basic/texmf-var/web2c/xetex/xelatex.fmt" 1773020837 5411345 358029ca62f314263e74d82c442b7063 ""
+  "/usr/local/texlive/2026basic/texmf.cnf" 1772405582 628 bbc09d6d38872d53c11bb48dc9b14e88 ""
+  "image_paths.aux" 1780623140.32117 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "image_paths.tex" 1780096367.76438 2463 015cd05b454aeca3d8a7797b34d9eabe ""
+  (generated)
+  "image_paths.aux"
+  "image_paths.log"
+  "image_paths.pdf"
+  (rewritten before read)

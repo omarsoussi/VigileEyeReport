@@ -1,0 +1,390 @@
+% ══════════════════════════════════════════════════════════════════════════
+%  CHAPTER IV — SPRINT III: AI VIDEO ANALYSIS
+%  To insert: place this block BEFORE the \chapter*{General Conclusion}
+%  in main.tex, replacing or appending after the Sprint II chapter.
+% ══════════════════════════════════════════════════════════════════════════
+
+\chapter{Implementation of Sprint III: AI Video Analysis}
+\label{chap:sprint3}
+\markboth{Chapter IV. Implementation of Sprint III: AI Video Analysis}{}
+
+% ────────────────────────────────────────────────────────────────────────
+\section{Introduction}
+\label{sec:s3_intro}
+
+\hspace{0.8cm}The first two sprints gave VigileEye a solid foundation: a complete identity layer, a camera management backend, and a real-time streaming pipeline capable of delivering video from any RTSP source to a browser with sub-second latency. But a surveillance system that only shows video is, in a sense, just an expensive monitor. The intelligence that turns passive observation into active security is what Sprint III is about.
+
+\hspace{0.8cm}This chapter documents the design and implementation of two new FastAPI microservices powered by YOLO11: an \textbf{Object Detection Service} that analyses frames extracted from live camera streams and generates structured detection events, and an \textbf{Intrusion Detection Service} that builds on top of those detections to monitor configurable restricted zones and trigger alerts when unauthorised activity is identified. Both services follow the same Clean Architecture principles used throughout the project. Both integrate directly with the camera, streaming, and storage services developed in Sprint II. And both are designed to run at production load — not as academic prototypes, but as components that could handle dozens of concurrent camera feeds without becoming a bottleneck.
+
+\hspace{0.8cm}The sprint is documented through a product backlog, use case and class diagrams, three sequence diagrams covering the critical workflows, and a set of technology recommendations grounded in what actually works at scale.
+
+% ────────────────────────────────────────────────────────────────────────
+\section{Sprint III Backlog}
+\label{sec:s3_backlog}
+
+\hspace{0.8cm}Sprint III introduces fifteen user stories covering the object detection and intrusion detection capabilities. As in previous sprints, each story was broken into a Technical Story with a day estimate before development began, giving us clear, testable acceptance criteria and a realistic scope boundary for the sprint.
+
+% ── User Stories ──────────────────────────────────────────────────────
+\begin{longtable}{|>{\small}c|>{\small\raggedright\arraybackslash}p{11.5cm}|}
+\hline
+\textbf{ID} & \textbf{User Story} \\ \hline
+\endfirsthead \hline \textbf{ID} & \textbf{User Story} \\ \hline
+\endhead \hline
+\endfoot \hline
+\endlastfoot
+
+22.1 & As a Camera Owner, I want the system to automatically detect objects in live camera frames so that I am alerted to activity without watching every feed manually \\ \hline
+22.2 & As a Camera Owner, I want detected objects to be labelled with a class name and confidence score so that I can assess the reliability of each detection \\ \hline
+22.3 & As a Camera Owner, I want each detection run to produce a structured event persisted to the database so that I can query and review activity history \\ \hline
+22.4 & As a Camera Owner, I want detection frames with bounding box overlays to be captured and stored so that I have visual evidence for each detection event \\ \hline
+23.1 & As a Camera Owner, I want to view live detection overlays on the camera feed so that I can monitor what the AI is seeing in real time \\ \hline
+23.2 & As a Camera Owner, I want to filter the detection overlay by object class so that I can focus on specific categories such as persons or vehicles \\ \hline
+24.1 & As a Camera Owner, I want to query detection events by camera, date range, or object class so that I can investigate past incidents efficiently \\ \hline
+24.2 & As a Camera Owner, I want each detection event record to include the camera identifier, timestamp, detected objects list, and a link to the evidence frame so that investigations are self-contained \\ \hline
+25.1 & As a Camera Owner, I want to configure the YOLO model confidence threshold per camera so that I can tune the balance between sensitivity and false positive rate \\ \hline
+25.2 & As a Camera Owner, I want to enable or disable the object detection service per camera so that processing resources are allocated only to cameras that need analysis \\ \hline
+26.1 & As a Camera Owner, I want to define a Region of Interest by selecting a polygon on the camera frame so that I can restrict intrusion monitoring to a specific area \\ \hline
+26.2 & As a Camera Owner, I want to assign a name, severity level, and active schedule to each Region of Interest so that alert behaviour is context-aware \\ \hline
+27.1 & As a Camera Owner, I want to view, update, activate, deactivate, and delete Regions of Interest so that zone configurations can be maintained over time \\ \hline
+28.1 & As a Camera Owner, I want the system to raise an intrusion event whenever a detected object's bounding box overlaps an active Region of Interest so that boundary violations are never missed \\ \hline
+28.2 & As a Camera Owner, I want each intrusion event to include the triggering object, zone name, severity, timestamp, and an evidence frame so that every alert is fully documented \\ \hline
+29.1 & As a Camera Owner, I want to receive a real-time notification via WebSocket when an intrusion event is created so that I can respond immediately \\ \hline
+29.2 & As a Camera Owner, I want to receive an email notification for high-severity intrusion events so that critical alerts are not missed even when the dashboard is closed \\ \hline
+30.1 & As a Camera Owner, I want to acknowledge an alert from the dashboard so that the team knows the event has been reviewed \\ \hline
+30.2 & As a Camera Owner, I want to add a free-text resolution note when acknowledging an alert so that the audit trail records what action was taken \\ \hline
+31.1 & As a Camera Owner, I want to view all intrusion events for a camera with filtering by severity and date so that I can prioritise unreviewed incidents \\ \hline
+31.2 & As a Camera Owner, I want to open the evidence frame associated with any intrusion event directly from the event list so that I do not have to navigate to a separate storage screen \\ \hline
+
+\caption{Sprint III User Stories}
+\label{tab:sprint3_stories}
+\end{longtable}
+
+% ── Technical Backlog ─────────────────────────────────────────────────
+\begin{sloppypar}
+\begin{longtable}{|>{\small}p{2cm}|>{\small}p{4cm}|>{\small}p{5.5cm}|>{\small}c|}
+\hline
+\textbf{Item} & \textbf{User Story} & \textbf{Technical Story} & \textbf{Est.} \\ \hline
+\endfirsthead \hline \textbf{Item} & \textbf{User Story} & \textbf{Technical Story} & \textbf{Est.} \\ \hline
+\endhead \hline
+\endfoot \hline
+\endlastfoot
+
+\multirow{4}{*}{\parbox{2cm}{\small Object Detection Core}} &
+Detect objects in frames & Implement \texttt{YOLOInferenceEngine} in the Infrastructure layer wrapping Ultralytics YOLO11. Load model weights on startup, run inference on decoded numpy frames, return a list of \texttt{DetectedObject} value objects. Unit tests with mock frames. & 2.5 \\ \cline{2-4}
+& Extract frames from stream & Build \texttt{FFmpegFrameCapture} subscribing to the MediaMTX RTSP relay. Decode frames using OpenCV and push to an async queue consumed by the inference engine. Integration tests with a synthetic test stream. & 2 \\ \cline{2-4}
+& Persist detection events & Implement \texttt{SQLAlchemyDetectionRepository} storing \texttt{DetectionEvent} records on Neon PostgreSQL. Index by \texttt{camera\_id} and \texttt{created\_at} for efficient querying. & 1.5 \\ \cline{2-4}
+& Store evidence frames & Reuse the Storage service's MinIO/Azure/local strategy to write annotated frames. Reference the resulting object URL in the \texttt{DetectionEvent} record. & 1 \\ \hline
+
+\multirow{2}{*}{\parbox{2cm}{\small Detection API}} &
+REST detection endpoints & Build FastAPI routes for starting/stopping per-camera detection, querying event history with pagination and filtering, and retrieving individual event details. Cover all routes with integration tests. & 2 \\ \cline{2-4}
+& Detection configuration & Implement per-camera configuration endpoint allowing confidence threshold, class filter list, and frame sampling rate to be updated without restarting the service. & 1 \\ \hline
+
+\multirow{2}{*}{\parbox{2cm}{\small Detection Display}} &
+Live overlay via WebSocket & Add a WebSocket endpoint that publishes bounding-box data for the most recent frame to any connected client. Frontend consumes this to draw overlays on the live feed canvas. & 2 \\ \cline{2-4}
+& Class filter on frontend & Add a class filter control to the camera view that sends the desired class list as a query parameter; the endpoint returns only matching detections. & 0.5 \\ \hline
+
+\multirow{3}{*}{\parbox{2cm}{\small ROI Management}} &
+Define and store ROI & Build \texttt{RegionOfInterest} entity and persistence layer. Accept polygon coordinates as a list of \texttt{\{x, y\}} points, validate the polygon is closed and convex, and store via \texttt{SQLAlchemyROIRepository}. Integration tests for polygon validation. & 2 \\ \cline{2-4}
+& Assign severity and schedule & Add \texttt{severity} (LOW, MEDIUM, HIGH, CRITICAL) and \texttt{schedule} (day-of-week bitmask, start/end time) fields to \texttt{RegionOfInterest}. Evaluate schedule during intrusion checks. & 1 \\ \cline{2-4}
+& ROI CRUD and toggle & Build CRUD endpoints plus activate/deactivate toggle. Only authenticated Camera Owners may modify their own zones. Integration tests for all lifecycle transitions. & 1 \\ \hline
+
+\multirow{3}{*}{\parbox{2cm}{\small Intrusion Detection Core}} &
+ROI overlap evaluation & Implement \texttt{ROIEvaluator} domain service using the Sutherland--Hodgman intersection algorithm to test whether a detected bounding box overlaps the zone polygon. Pure domain logic, no external dependencies. Unit tests with a comprehensive polygon/bbox matrix. & 2 \\ \cline{2-4}
+& Intrusion event creation & Build \texttt{IntrusionDetectionUseCase} orchestrating the overlap check, \texttt{IntrusionEvent} construction, and persistence via \texttt{SQLAlchemyIntrusionRepository}. Avoid duplicate events within a configurable cooldown window per zone. & 1.5 \\ \cline{2-4}
+& Deduplication and cooldown & Implement a per-zone in-memory cooldown registry using TTL logic. Prevents alert flooding when an object remains in a zone across many frames. & 1 \\ \hline
+
+\multirow{2}{*}{\parbox{2cm}{\small Alert System}} &
+WebSocket real-time alert & On \texttt{IntrusionEvent} creation, publish the event payload to a Redis Pub/Sub channel. A WebSocket manager subscribes and fans out to all authenticated clients monitoring the affected camera. & 2 \\ \cline{2-4}
+& Email alert for high severity & Implement \texttt{EmailAlertService} triggered for events with severity HIGH or CRITICAL. Reuse the SMTP infrastructure from Sprint I. Rate-limit to one email per zone per five-minute window. & 1 \\ \hline
+
+\multirow{2}{*}{\parbox{2cm}{\small Alert Management}} &
+Acknowledge alert & Build \texttt{PATCH /alerts/\{id\}/acknowledge} endpoint. Validate the requesting user has access to the source camera, update \texttt{status} to \texttt{ACKNOWLEDGED}, and record \texttt{acknowledged\_by} and \texttt{acknowledged\_at}. & 1 \\ \cline{2-4}
+& Resolution note & Add an optional \texttt{resolution\_note} field to the acknowledge request body. Persist to the \texttt{Alert} record. & 0.5 \\ \hline
+
+\multirow{2}{*}{\parbox{2cm}{\small Intrusion History}} &
+Query intrusion events & Build paginated \texttt{GET /intrusion-events} endpoint filterable by \texttt{camera\_id}, \texttt{severity}, \texttt{roi\_id}, and date range. Return enriched records including ROI name and evidence frame URL. & 1.5 \\ \cline{2-4}
+& Evidence frame access & Generate pre-signed download URLs for evidence frames on demand, using the same signed URL mechanism from the Storage service. & 0.5 \\ \hline
+
+\caption{Sprint III Backlog}
+\label{tab:sprint3_backlog}
+\end{longtable}
+\end{sloppypar}
+
+% ────────────────────────────────────────────────────────────────────────
+\section{Functional Overview -- Sprint III}
+\label{sec:s3_functional}
+
+\subsection{Use Case Diagram -- Sprint III}
+\label{subsec:s3_use_cases}
+
+\hspace{0.8cm}Figure~\ref{fig:sprint3_use_case} presents the Sprint III use case diagram. Two primary human actors interact with the system: the \textbf{Camera Owner}, who monitors feeds, reviews events, and manages alerts; and the \textbf{Camera Owner} (with configuration privileges), who defines Regions of Interest and tunes detection parameters. Two automated actors participate in the same boundary: the \textbf{AI Detection Service} drives the inference and event-creation pipeline, while the \textbf{Notification System} handles alert dispatch once an intrusion event has been persisted.
+
+\begin{figure}[H]
+\centering
+\imgplaceholder{Use Case Diagram -- Sprint III}
+\caption{Use Case Diagram -- Sprint III (AI Video Analysis)}
+\label{fig:sprint3_use_case}
+\end{figure}
+
+\subsection{Textual Use Case Specification -- Sprint III}
+\label{subsec:s3_uc_spec}
+
+\hspace{0.8cm}The four tables below specify the principal use cases implemented during Sprint III in the standard Actor / Description / Precondition / Nominal / Alternative template.
+
+\needspace{6\baselineskip}
+\textbf{Run Object Detection}
+\begin{table}[H]
+\centering\small
+\begin{tabular}{|>{\bfseries}p{3cm}|p{10cm}|}
+\hline
+Use Case    & Run Object Detection \\ \hline
+Actor       & AI Detection Service (automated), Camera Owner (observer) \\ \hline
+Description & Continuously extracts frames from the camera's RTSP relay, runs YOLO11 inference, and persists structured detection events with annotated evidence frames \\ \hline
+Precondition & The camera is registered, its stream is active in MediaMTX, and the Object Detection Service has been enabled for that camera \\ \hline
+Nominal Scenario &
+1. The \texttt{FFmpegFrameCapture} worker subscribes to the camera's RTSP relay in MediaMTX.\newline
+2. Frames are decoded and placed in an async inference queue at the configured sampling rate.\newline
+3. The \texttt{YOLOInferenceEngine} consumes each frame, runs the YOLO11 model, and returns a list of \texttt{DetectedObject} instances.\newline
+4. The \texttt{RunDetectionUseCase} constructs a \texttt{DetectionEvent} entity and persists it via the \texttt{IDetectionRepository}.\newline
+5. The annotated frame is written to the configured storage backend (MinIO, Azure, or local) and the resulting URL is attached to the event record.\newline
+6. The bounding-box payload is published on the WebSocket channel so the live overlay updates immediately. \\ \hline
+Alternative Scenario &
+\textbf{--} Detection confidence below threshold: the object is discarded; no event is created.\newline
+\textbf{--} Storage write fails: the event is persisted with a null frame URL; an error is logged.\newline
+\textbf{--} Camera stream drops: the frame worker enters a retry loop with exponential backoff. \\ \hline
+\end{tabular}
+\caption{Use Case: Run Object Detection}
+\label{tab:uc_object_detection}
+\end{table}
+
+\needspace{6\baselineskip}
+\textbf{Manage Regions of Interest}
+\begin{table}[H]
+\centering\small
+\begin{tabular}{|>{\bfseries}p{3cm}|p{10cm}|}
+\hline
+Use Case    & Manage Regions of Interest \\ \hline
+Actor       & System Administrator (Camera Owner) \\ \hline
+Description & Allows a Camera Owner to define, configure, and maintain polygonal restricted zones on their cameras, which the Intrusion Detection Service will monitor \\ \hline
+Precondition & The user is authenticated, has the Camera Owner role, and owns at least one registered camera \\ \hline
+Nominal Scenario &
+A: Create ROI:\newline
+1. Owner opens the zone configuration screen for a camera.\newline
+2. Owner draws a polygon on the live frame preview by clicking boundary vertices.\newline
+3. Owner assigns a name, severity level (LOW / MEDIUM / HIGH / CRITICAL), and an optional active schedule.\newline
+4. System validates the polygon, persists the \texttt{RegionOfInterest} entity, and activates monitoring immediately if no schedule is set.\newline
+B: Update ROI:\newline
+1. Owner selects an existing zone and modifies its polygon or configuration.\newline
+2. System re-validates and updates the record.\newline
+C: Deactivate ROI: Owner toggles the zone off; the intrusion service skips it in overlap evaluations.\newline
+D: Delete ROI: System marks the zone as deleted; historical intrusion events referencing it are retained. \\ \hline
+Alternative Scenario &
+\textbf{--} Invalid polygon (self-intersecting or fewer than three vertices): validation error returned before persistence.\newline
+\textbf{--} Overlapping zones: system permits overlaps but records both zones in any triggered intrusion event. \\ \hline
+\end{tabular}
+\caption{Use Case: Manage Regions of Interest}
+\label{tab:uc_roi}
+\end{table}
+
+\needspace{6\baselineskip}
+\textbf{Detect Intrusion}
+\begin{table}[H]
+\centering\small
+\begin{tabular}{|>{\bfseries}p{3cm}|p{10cm}|}
+\hline
+Use Case    & Detect Intrusion \\ \hline
+Actor       & AI Detection Service (automated) \\ \hline
+Description & Evaluates each detection result against all active Regions of Interest for the camera and creates an intrusion event if an overlap is found \\ \hline
+Precondition & At least one active ROI is configured for the camera and the object detection pipeline is running \\ \hline
+Nominal Scenario &
+1. The \texttt{IntrusionDetectionUseCase} receives a \texttt{DetectionEvent} from the Object Detection Service (via an internal async message).\newline
+2. The use case retrieves all active \texttt{RegionOfInterest} records for the source camera.\newline
+3. The \texttt{ROIEvaluator} domain service tests whether each detected bounding box intersects each zone polygon.\newline
+4. For every positive overlap, the use case checks the per-zone cooldown registry to avoid duplicate events.\newline
+5. If outside the cooldown window, an \texttt{IntrusionEvent} entity is constructed and persisted.\newline
+6. The \texttt{AlertOrchestrator} application service is called to dispatch notifications. \\ \hline
+Alternative Scenario &
+\textbf{--} All active ROIs have a schedule that excludes the current time: no overlap evaluation is performed.\newline
+\textbf{--} Zone is within the cooldown window: event is skipped; the cooldown timer is reset.\newline
+\textbf{--} ROI retrieval fails: the use case logs the error and continues to the next detection cycle. \\ \hline
+\end{tabular}
+\caption{Use Case: Detect Intrusion}
+\label{tab:uc_intrusion}
+\end{table}
+
+\needspace{6\baselineskip}
+\textbf{Manage Alerts}
+\begin{table}[H]
+\centering\small
+\begin{tabular}{|>{\bfseries}p{3cm}|p{10cm}|}
+\hline
+Use Case    & Manage Alerts \\ \hline
+Actor       & Camera Owner, Notification System (automated) \\ \hline
+Description & Dispatches real-time WebSocket and email notifications when an intrusion event is created, and allows operators to acknowledge and annotate alerts from the dashboard \\ \hline
+Precondition & An \texttt{IntrusionEvent} has been persisted by the Intrusion Detection Service \\ \hline
+Nominal Scenario &
+A: Alert Dispatch:\newline
+1. \texttt{AlertOrchestrator} publishes the \texttt{IntrusionEvent} payload to the Redis \texttt{intrusion-events} channel.\newline
+2. The WebSocket manager, subscribed to that channel, fans out the event to all authenticated operator clients watching the camera.\newline
+3. For HIGH and CRITICAL severity events, the \texttt{EmailAlertService} sends a notification to the Camera Owner's registered email.\newline
+4. An \texttt{Alert} record is created with status \texttt{PENDING}.\newline
+B: Acknowledge Alert:\newline
+1. Operator sees the alert card on the dashboard and clicks Acknowledge.\newline
+2. Operator optionally enters a resolution note.\newline
+3. System updates the \texttt{Alert} record: status becomes \texttt{ACKNOWLEDGED}, and \texttt{acknowledged\_by}, \texttt{acknowledged\_at}, and \texttt{resolution\_note} are set. \\ \hline
+Alternative Scenario &
+\textbf{--} No WebSocket clients connected: event remains in Redis and is delivered when the next client subscribes.\newline
+\textbf{--} Email sending fails: alert status remains PENDING and an error is logged; a retry is attempted after five minutes.\newline
+\textbf{--} Rate limit reached (>1 email per zone per 5 minutes): email is suppressed; WebSocket notification still fires. \\ \hline
+\end{tabular}
+\caption{Use Case: Manage Alerts}
+\label{tab:uc_alerts}
+\end{table}
+
+% ────────────────────────────────────────────────────────────────────────
+\section{Conception Overview of Sprint III}
+\label{sec:s3_conception}
+
+\hspace{0.8cm}Sprint III adds two new microservices to the VigileEye platform. The class diagram captures the domain model shared across both services; the three sequence diagrams trace the critical workflows from frame ingestion through to alert acknowledgement.
+
+% ── Class Diagrams ────────────────────────────────────────────────────
+\subsection{Class Diagrams -- Sprint III}
+\label{subsec:s3_class}
+
+\begin{figure}[H]
+\centering
+\imgplaceholder{Class Diagram -- Sprint III (Object Detection \& Intrusion Detection Services)}
+\caption{Class Diagram -- Sprint III Schema}
+\label{fig:sprint3_class}
+\end{figure}
+
+\hspace{0.8cm}The class diagram in Figure~\ref{fig:sprint3_class} organises the Sprint III domain model across the four Clean Architecture layers. The \textbf{Domain Layer} defines the core entities: \texttt{Frame}, \texttt{DetectedObject} (a value object carrying \texttt{class\_name}, \texttt{confidence}, and a \texttt{BoundingBox}), \texttt{DetectionEvent} (aggregating one or more \texttt{DetectedObject} instances per frame), \texttt{RegionOfInterest} (a polygon with severity and schedule metadata), \texttt{IntrusionEvent} (a domain record linking a detection event to a violated zone), and \texttt{Alert} (the notification artefact produced when an \texttt{IntrusionEvent} is created). The \textbf{Application Layer} exposes three use cases — \texttt{RunDetectionUseCase}, \texttt{IntrusionDetectionUseCase}, and \texttt{AlertOrchestrator} — each depending on repository and service interfaces defined in the same layer and implemented in the layer below. The \textbf{Infrastructure Layer} houses the \texttt{YOLOInferenceEngine}, \texttt{FFmpegFrameCapture}, \texttt{ROIEvaluator}, all SQLAlchemy repository implementations, and both alert delivery adapters. The \textbf{API Layer} consists of three FastAPI routers: the detection events router, the ROI management router, and the alerts router.
+
+% ── Sequence Diagrams ─────────────────────────────────────────────────
+\subsection{Sequence Diagrams -- Sprint III}
+\label{subsec:s3_sequences}
+
+\hspace{0.8cm}Three sequence diagrams cover the primary Sprint III workflows. The first traces the complete object detection pipeline from frame capture to event persistence and live overlay. The second covers the intrusion evaluation path that runs downstream of every detection cycle. The third describes the alert lifecycle from event creation to operator acknowledgement.
+
+\textbf{Sequence 1 — Object Detection Workflow}
+
+\begin{figure}[H]
+\centering
+\imgplaceholder{Sequence Diagram: Object Detection Workflow (Frame Capture → YOLO Inference → Event Storage → WebSocket Broadcast)}
+\caption{Sequence Diagram: Object Detection Workflow}
+\label{fig:seq_s3_detection}
+\end{figure}
+
+\hspace{0.8cm}Figure~\ref{fig:seq_s3_detection} traces the end-to-end journey of a single frame through the Object Detection Service. The \texttt{FFmpegFrameCapture} worker pulls raw video frames from the MediaMTX RTSP relay at a configurable sampling rate (default: every second). Each decoded frame is placed in an async queue. The \texttt{RunDetectionUseCase} picks it up, calls the \texttt{YOLOInferenceEngine}, and receives a list of \texttt{DetectedObject} value objects. A \texttt{DetectionEvent} entity is assembled, annotated on the original frame using OpenCV, and written to the storage backend. The event is then persisted to PostgreSQL. Finally, the bounding-box payload is published on the camera's WebSocket channel, causing the frontend overlay to update without any polling.
+
+\textbf{Sequence 2 — Intrusion Detection Workflow}
+
+\begin{figure}[H]
+\centering
+\imgplaceholder{Sequence Diagram: Intrusion Detection Workflow (Detection Event → ROI Retrieval → Polygon Overlap → Cooldown Check → IntrusionEvent Creation)}
+\caption{Sequence Diagram: Intrusion Detection Workflow}
+\label{fig:seq_s3_intrusion}
+\end{figure}
+
+\hspace{0.8cm}Figure~\ref{fig:seq_s3_intrusion} shows what happens once a \texttt{DetectionEvent} has been committed. The Intrusion Detection Service listens for new events on the internal async bus. On receipt, it retrieves all active \texttt{RegionOfInterest} records for the source camera and calls the \texttt{ROIEvaluator} domain service for each (detected object, zone) pair. If an intersection is found and the per-zone cooldown has expired, an \texttt{IntrusionEvent} entity is constructed and saved, and the \texttt{AlertOrchestrator} is called to begin notification dispatch. If the zone is currently outside its active schedule, the overlap check is skipped entirely.
+
+\textbf{Sequence 3 — Intrusion Alert Workflow}
+
+\begin{figure}[H]
+\centering
+\imgplaceholder{Sequence Diagram: Intrusion Alert Workflow (IntrusionEvent → Redis Pub/Sub → WebSocket Broadcast → Email Dispatch → Operator Acknowledgement)}
+\caption{Sequence Diagram: Intrusion Alert Workflow}
+\label{fig:seq_s3_alert}
+\end{figure}
+
+\hspace{0.8cm}Figure~\ref{fig:seq_s3_alert} details the alert delivery and resolution path. After the \texttt{IntrusionEvent} is persisted, the \texttt{AlertOrchestrator} publishes the event payload to a Redis Pub/Sub channel. The WebSocket manager, running as a background coroutine, receives the message and immediately fans it out to every authenticated client currently connected to that camera's event stream. For events rated HIGH or CRITICAL, the \texttt{EmailAlertService} sends a formatted notification to the Camera Owner using the SMTP infrastructure built in Sprint I. An \texttt{Alert} record is created with status \texttt{PENDING}. When the operator sees the alert card on the dashboard and clicks Acknowledge, a \texttt{PATCH} request is issued; the server validates camera ownership, sets the alert status to \texttt{ACKNOWLEDGED}, and records the operator's identity, the acknowledgement timestamp, and any resolution note provided.
+
+% ────────────────────────────────────────────────────────────────────────
+\section{Technology Stack and Architecture Recommendations}
+\label{sec:s3_tech}
+
+\hspace{0.8cm}Choosing the right libraries and infrastructure patterns for an AI-driven video pipeline is not a detail decision --- it directly determines whether the system handles ten cameras or ten thousand. Below is the technology strategy adopted for Sprint III, with justification for each choice.
+
+\subsection{Inference Engine: Ultralytics YOLO11}
+\label{subsec:s3_yolo}
+
+\hspace{0.8cm}YOLO11 is the current generation of the Ultralytics YOLO family. It improves on YOLOv8 in both detection accuracy and inference throughput. For VigileEye, we use the \texttt{yolo11n} (nano) variant in production because its inference latency on a single CPU core stays below 80 milliseconds per frame at 640$\times$480 resolution --- fast enough to process one frame per second from up to a dozen concurrent cameras on a modest server. GPU-equipped deployments can switch to \texttt{yolo11m} or \texttt{yolo11l} without any code change, because the model is injected through the \texttt{IYOLOInferenceEngine} interface. Model weights are loaded once at service startup and pinned to memory; there is no per-frame loading overhead.
+
+\subsection{Frame Processing: OpenCV and FFmpeg}
+\label{subsec:s3_opencv}
+
+\hspace{0.8cm}OpenCV handles frame decoding, resize, and annotation (drawing bounding boxes and labels on evidence frames). It is the standard choice for this workload --- the numpy array interface maps directly onto what the YOLO model expects. Frame capture uses the same FFmpeg binary already embedded in the Streaming service: for each detection-enabled camera, a lightweight FFmpeg process reads the MediaMTX RTSP relay and writes JPEG frames to a Unix pipe. This avoids duplicating the capture logic and keeps the Object Detection Service stateless with respect to transport.
+
+\subsection{Asynchronous Frame Queue: Python asyncio with a Bounded Queue}
+\label{subsec:s3_async}
+
+\hspace{0.8cm}Frame capture and YOLO inference run as concurrent \texttt{asyncio} tasks sharing a bounded \texttt{asyncio.Queue}. The queue depth is set to the number of cameras enabled for detection --- if inference falls behind, the oldest frame is dropped rather than accumulating an unbounded backlog. This is the correct trade-off for surveillance: a slightly stale detection is far less harmful than the service running out of memory because it held every frame since the last slow inference cycle.
+
+\subsection{Object Tracking: ByteTrack}
+\label{subsec:s3_tracking}
+
+\hspace{0.8cm}For the intrusion detection use case, knowing that the same physical object has been in the zone across multiple frames is more useful than treating each frame independently. ByteTrack is integrated directly into the Ultralytics pipeline via the \texttt{tracker=bytetrack.yaml} argument. It assigns a stable numeric track ID to each detected object across frames. The \texttt{ROIEvaluator} can then report not just that \emph{a person entered zone X}, but that \emph{track 42 has been continuously present in zone X for 3 seconds} --- which makes the cooldown logic more robust and reduces false positives from brief boundary touches.
+
+\subsection{Alert Fanout: Redis Pub/Sub}
+\label{subsec:s3_redis}
+
+\hspace{0.8cm}Real-time alert delivery requires a message broker that decouples the Intrusion Detection Service from the WebSocket connection manager. Redis Pub/Sub is the right fit here: it is already a common infrastructure component, its latency for publish/subscribe is measured in single-digit milliseconds, and the Python \texttt{aioredis} library integrates cleanly with the FastAPI async stack. The WebSocket manager runs as a singleton background task, subscribed to the \texttt{intrusion-events} channel. When a message arrives, it iterates the set of active connections for the relevant camera and calls \texttt{send\_json} on each. Connection state is held in memory --- no shared state between service instances is needed as long as a single instance handles the WebSocket connections for a given deployment.
+
+\subsection{GPU Inference Optimisation: ONNX Runtime and TensorRT}
+\label{subsec:s3_gpu}
+
+\hspace{0.8cm}For deployments with NVIDIA GPUs, YOLO11 models can be exported to ONNX format and executed via ONNX Runtime with the CUDA execution provider, cutting inference time by a factor of four to six compared to CPU. On systems with TensorRT available, a further quantisation to FP16 or INT8 reduces both latency and VRAM consumption. The \texttt{IYOLOInferenceEngine} interface makes this transparent to the application and domain layers --- swapping backends requires changing a single dependency injection binding.
+
+\subsection{Database Indexing Strategy}
+\label{subsec:s3_db}
+
+\hspace{0.8cm}Detection and intrusion events are write-heavy tables. PostgreSQL composite indices on (\texttt{camera\_id}, \texttt{created\_at}) cover the most common query pattern --- filtering events for a specific camera in a date window. A partial index on \texttt{intrusion\_events} filtered by \texttt{severity IN ('HIGH', 'CRITICAL')} accelerates the dashboard's unacknowledged-alerts widget. Evidence frame URLs are stored as plain text; the frames themselves live in the object store, so the database is never on the hot path for binary data.
+
+% ────────────────────────────────────────────────────────────────────────
+\section{Implementation Highlights}
+\label{sec:s3_impl}
+
+\subsection{Object Detection Service Architecture}
+\label{subsec:s3_detection_impl}
+
+\hspace{0.8cm}The Object Detection Service follows the same four-layer Clean Architecture pattern used in the Sprint I Authentication and Sprint II Camera services. The Domain Layer defines \texttt{Frame}, \texttt{DetectedObject}, \texttt{BoundingBox}, and \texttt{DetectionEvent} as pure Python dataclasses with no framework imports. The Application Layer contains \texttt{RunDetectionUseCase}, which depends on three interfaces: \texttt{IFrameCapture}, \texttt{IYOLOInferenceEngine}, and \texttt{IDetectionRepository}. The Infrastructure Layer provides concrete implementations of each. FastAPI dependency injection wires everything together at startup.
+
+\hspace{0.8cm}The per-camera detection configuration is stored in a \texttt{DetectionConfig} table and loaded once per camera worker. Updating the configuration via the REST API writes the new row and signals the running worker to reload it on the next frame cycle. This means the confidence threshold and class filter can be changed without restarting any process or dropping any frames.
+
+\begin{figure}[H]
+\centering
+\imgplaceholder{Object Detection Service: Screenshot of detection events list on the dashboard}
+\caption{Object Detection Service -- Event History View}
+\label{fig:s3_detection_ui}
+\end{figure}
+
+\subsection{Intrusion Detection Service Architecture}
+\label{subsec:s3_intrusion_impl}
+
+\hspace{0.8cm}The Intrusion Detection Service is a separate FastAPI process. It subscribes to detection events on an internal async bus (implemented as a Redis list with \texttt{BLPOP}) and processes them one at a time through the \texttt{IntrusionDetectionUseCase}. The \texttt{ROIEvaluator} is implemented using a point-in-polygon test for the bounding box centroid, combined with a box-polygon intersection check for higher precision. Both checks run in pure Python in under one millisecond for typical polygon sizes, so they never become a bottleneck.
+
+\hspace{0.8cm}The cooldown registry is a Python dictionary keyed by \texttt{(camera\_id, roi\_id)} with a TTL value. On every intrusion check, expired entries are pruned lazily. In practice this is negligible memory overhead --- a deployment with one hundred active zones uses well under a megabyte.
+
+\begin{figure}[H]
+\centering
+\imgplaceholder{Intrusion Detection Service: Screenshot of ROI polygon editor on live camera frame}
+\caption{Intrusion Detection Service -- Region of Interest Editor}
+\label{fig:s3_roi_editor}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\imgplaceholder{Intrusion Detection Service: Screenshot of real-time alert notification on the dashboard}
+\caption{Intrusion Detection Service -- Real-Time Alert Notification}
+\label{fig:s3_alert_dashboard}
+\end{figure}
+
+% ────────────────────────────────────────────────────────────────────────
+\subsection*{Conclusion}
+
+\hspace{0.8cm}Sprint III pushed VigileEye across the threshold that separates a surveillance system from an intelligent one. Connecting a YOLO11 inference engine to the streaming pipeline from Sprint II was, on paper, straightforward. In practice, the challenge was making the connection robust: handling stream interruptions gracefully, avoiding inference queue backlogs, preventing alert floods from persistent zone occupancy, and keeping both new services inside the same Clean Architecture boundaries that the rest of the codebase follows. Getting the polygon-overlap math right for irregular zones took more iterations than expected, and integrating Redis Pub/Sub into the FastAPI async loop had a couple of surprising edge cases around connection management under load. But the end result is a system where a Security Operator receives a WebSocket push notification, complete with an evidence frame and zone name, within two to three seconds of an actual boundary violation --- without ever having to watch the feed. That turnaround time, from camera pixel to operator screen, is what makes the intelligence layer feel real rather than theoretical.
+
+\end{document}
+% ══ END OF SPRINT III CHAPTER ══════════════════════════════════════════
+% NOTE: Remove the \end{document} line above when integrating into main.tex.
+% Insert this chapter block immediately before \chapter*{General Conclusion}.

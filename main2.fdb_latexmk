@@ -1,0 +1,12 @@
+# Fdb version 4
+["pdflatex"] 1780623413.27503 "main2.tex" "main2.pdf" "main2" 1780623415.18581 2
+  "/usr/local/texlive/2026basic/texmf-dist/web2c/texmf.cnf" 1770478701 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
+  "/usr/local/texlive/2026basic/texmf-var/web2c/xetex/xelatex.fmt" 1773020837 5411345 358029ca62f314263e74d82c442b7063 ""
+  "/usr/local/texlive/2026basic/texmf.cnf" 1772405582 628 bbc09d6d38872d53c11bb48dc9b14e88 ""
+  "main2.aux" 1780623405.27447 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main2.tex" 1778694527.84229 38469 573b6269641becdd8dad639cc94a03fd ""
+  (generated)
+  "main2.aux"
+  "main2.log"
+  "main2.pdf"
+  (rewritten before read)

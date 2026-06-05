@@ -1,0 +1,7 @@
+PWD /Users/mac/Desktop/report_final
+INPUT /usr/local/texlive/2026basic/texmf.cnf
+INPUT /usr/local/texlive/2026basic/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2026basic/texmf-var/web2c/xetex/xelatex.fmt
+INPUT main2.tex
+OUTPUT main2.log
+INPUT main2.aux

@@ -1,0 +1,143 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.9)  5 JUN 2026 02:32
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**image_paths.tex
+(./image_paths.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+./image_paths.tex:23: Undefined control sequence.
+l.23 \graphicspath
+                  {{Tech/}{Machines/}{casestudy/}{Architecture/}{ibsoft/}{ch...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./image_paths.tex:23: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \graphicspath{{T
+                     ech/}{Machines/}{casestudy/}{Architecture/}{ibsoft/}{ch...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T ("54) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no h ("68) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no M ("4D) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no h ("68) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no y ("79) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no A ("41) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no h ("68) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no f ("66) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no h ("68) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+./image_paths.tex:23: Missing $ inserted.
+<inserted text> 
+                $
+l.23 ...udy/}{Architecture/}{ibsoft/}{charts/}{ui_
+                                                  screenshots/}{diagram repo...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 23.
+./image_paths.tex:23: Extra }, or forgotten $.
+l.23 ...cture/}{ibsoft/}{charts/}{ui_screenshots/}
+                                                  {diagram report images/}}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./image_paths.tex:23: Extra }, or forgotten $.
+l.23 ...{ui_screenshots/}{diagram report images/}}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./image_paths.tex:24: Missing $ inserted.
+<inserted text> 
+                $
+l.24 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (179.9288pt too wide) in paragraph at lines 23--24
+[]$[]\OML/cmm/m/it/10 creenshots=[]$ 
+ []
+
+)
+! Emergency stop.
+<*> image_paths.tex
+                   
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 47 strings out of 469709
+ 619 string characters out of 5466024
+ 426408 words of memory out of 5000000
+ 28778 multiletter control sequences out of 15000+600000
+ 627721 words of font info for 40 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 18i,2n,18p,182b,61s stack positions out of 10000i,1000n,20000p,200000b,200000s
+No pages of output.
